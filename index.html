@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <title>Matthieu Martin - Bienvenue sur mon Portfolio !</title>
     <meta charset="utf-8">
-    <meta name="keywords" content="Matthieu Martin, Mathieu Martin, Matieu Martin, Mattieu Martin, Portfolio, intégrateur web, Troyes, créer son site, Développeur Front-End"
-    />
-    <meta name="description" content="Portfolio de Matthieu Martin. Découvrez qui je suis, les différents travaux effectués durant mon DUT MMI, ainsi que mes travaux personnels."
-    />
+    <meta name="keywords"
+        content="Matthieu Martin, Mathieu Martin, Matieu Martin, Mattieu Martin, Portfolio, intégrateur web, Troyes, créer son site, Développeur Front-End" />
+    <meta name="description"
+        content="Portfolio de Matthieu Martin. Découvrez qui je suis, les différents travaux effectués durant mon DUT MMI, ainsi que mes travaux personnels." />
     <meta name="Subject" content="Portfolio">
     <meta name="Copyright" content="Matthieu Martin">
     <meta name="Author" content="Matthieu Martin">
@@ -16,77 +16,61 @@
     <meta name="Distribution" content="global">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css" type="text/css" />
-    <!--<link rel="stylesheet" href="css/bootstrap.css" type="text/css"/> -->
+    <link href="stylesheets/screen.css" media="screen" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <script src="js/jquery-3.2.1.js"></script>
-    <script src="js/jquery.localScroll.js"></script>
-    <script src="js/jquery.scrollTo.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('nav').localScroll();
-        });
-    </script>
-    <script>
-        $(window).scroll(function () {
-            if ($(document).scrollTop() > 690) {
-                $('nav').addClass('nav2');
-            } else {
-                $('nav').removeClass('nav2');
-            }
-        });
-    </script>
 </head>
 
 <body>
     <!-- Canvas -->
-
-    <section id="canvas" class="gradient">
-        <div class="canvas-content">
-            <h1>Matthieu MARTIN</h1>
-            <h2>Développeur Front-End</h2>
+    <header>
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#canvas">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="#z2">À Propos</a>
+                    </li>
+                    <li>
+                        <a href="#z3">Mes Compétences</a>
+                    </li>
+                    <li>
+                        <a href="#z4">Mes Travaux</a>
+                    </li>
+                    <li>
+                        <a href="#z5">Me Contacter</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-    </section>
-
-    <div class="nav">
-        <nav>
-            <ul>
-                <li>
-                    <a href="#canvas">Accueil</a>
-                </li>
-                <li>
-                    <a href="#z2">À Propos</a>
-                </li>
-                <li>
-                    <a href="#z3">Mes Compétences</a>
-                </li>
-                <li>
-                    <a href="#z4">Mes Travaux</a>
-                </li>
-                <li>
-                    <a href="#z5">Me Contacter</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
+        <section id="canvas" class="gradient">
+            <div class="canvas-content">
+                <h1>Matthieu MARTIN</h1>
+                <h2>Développeur Front-End</h2>
+            </div>
+        </section>
+    </header>
     <!-- À Propos -->
     <div id="z2">
-        <h1>Qui suis-je ?</h1>
-        <section>
+        <h2>Qui suis-je ?</h2>
+        <section id="me">
             <div id="moi">
-                <img src="moi.jpg" alt="Photographie de Victor Bezard">
+                <img src="photo.jpg" alt="Photographie de Victor Bezard">
             </div>
             <div id="logo">
-                <img src="logo.svg" alt="Logo vectorisé représentant mes 2 initiales">
+                <img src="logo.png" alt="Logo vectorisé représentant mes 2 initiales">
             </div>
         </section>
         <p>
             Je m'appelle Matthieu Martin, je suis actuellement étudiant à l'IUT de Troyes en DUT MMI.
-            <br> grâce à cette formation j'ai pu acquérir beaucoup d'expérience dans le domaine du web et plus spécialement dans
+            <br> grâce à cette formation j'ai pu acquérir beaucoup d'expérience dans le domaine du web et plus
+            spécialement dans
             le Développement Front-End.
-            <br> Je suis passionné par le domaine du Web mais aussi par les nouvelles technologies ainsi que les Jeux Vidéos.
+            <br> Je suis passionné par le domaine du Web mais aussi par les nouvelles technologies ainsi que les Jeux
+            Vidéos.
         </p>
         <div id="cv">
             <form action="CV.pdf">
@@ -96,29 +80,30 @@
     </div>
     <!-- Mes Compétences -->
     <div id="z3">
-        <h1>Mes Compétences</h1>
+        <h2>Mes Compétences</h2>
         <section id="competences">
             <div id="dev">
                 <i class="fa fa-code"></i>
-                <h2>Développement Web</h2>
-                <p>Assembler les pages en HTML5 et CSS3 à partir de maquettes graphiques, et intégrer des contenus textes, images,
+                <h3>Développement Web</h3>
+                <p>Assembler les pages en HTML5 et CSS3 à partir de maquettes graphiques, et intégrer des contenus
+                    textes, images,
                     sons, vidéos en HTML5.</p>
             </div>
             <div id="ergonomie">
                 <i class="fa fa-window-restore"></i>
-                <h2>Ergonomie</h2>
+                <h3>Ergonomie</h3>
                 <p>Conception d'une interface Web ergonomique, accessible et simple d'utilisation pour l'internaute.</p>
             </div>
             <div id="webdesign">
                 <i class="fa fa-sitemap"></i>
-                <h2>Webdesign</h2>
+                <h3>Webdesign</h3>
                 <p>Conception de l'interface Web, structuration d'un site, arborescence, organisation des pages.</p>
             </div>
         </section>
     </div>
     <!-- Mes Travaux -->
     <div id="z4">
-        <h1>Mes Travaux</h1>
+        <h2>Mes Travaux</h2>
         <section id="travaux">
             <div id="travail1">
                 <a href="http://195.83.128.55/~mmi16a04/site/index.html">
@@ -127,27 +112,29 @@
             </div>
             <div id="travail2">
                 <a href="http://149.91.81.147/iaraduin/">
-                    <img src="iaraduin.png" alt="Aperçu du site Iaraduin réalisé durant le 3ème semestre de mon DUT MMI">
+                    <img src="iaraduin.png"
+                        alt="Aperçu du site Iaraduin réalisé durant le 3ème semestre de mon DUT MMI">
                 </a>
             </div>
         </section>
         <p>Vous pouvez retrouvez mes travaux effectués pendant mon DUT MMI
-            <a href="http://195.83.128.55/~mmi16e12/travaux2.html"
-                target="blank">ici</a>.</p>
+            <a href="http://195.83.128.55/~mmi16e12/travaux2.html" target="blank">ici</a>.</p>
     </div>
     <!-- Me Contacter -->
     <div id="z5">
-        <h1>Me Contacter</h1>
+        <h2>Me Contacter</h2>
         <p>Vous avez des questions ou vous souhaitez me contacter ? Merci de remplir ce formulaire.</p>
         <form action="#" id="formulaire" method="post" name="formulaire">
             <div id="nom">
                 <input type="text" name="nom" placeholder="Votre nom" required aria-required="true" value="">
             </div>
             <div id="email">
-                <input type="email" name="email" placeholder="Votre adresse mail" required aria-required="true" value="">
+                <input type="email" name="email" placeholder="Votre adresse mail" required aria-required="true"
+                    value="">
             </div>
             <div>
-                <textarea name="message" id="message" placeholder="Votre message" required aria-required="true"></textarea>
+                <textarea name="message" id="message" placeholder="Votre message" required
+                    aria-required="true"></textarea>
             </div>
             <div id="envoyer">
                 <input class="bouton" type="submit" name="envoyer" value="Envoyer">
@@ -174,11 +161,31 @@
                     <i class="fa fa-twitter"></i>
                 </a>
             </li>
+            <li>
+                <a href="https://github.com/Ginshuto">
+                    <i class="fa fa-github"></i>
+                </a>
+            </li>
         </ul>
     </footer>
     <!--///////////////////////////////////////////////////-->
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/jquery.localScroll.js"></script>
+    <script src="js/jquery.scrollTo.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('nav').localScroll();
+        });
+        $(window).scroll(function () {
+            if ($(document).scrollTop() > 670) {
+                $('nav').addClass('nav2');
+            } else {
+                $('nav').removeClass('nav2');
+            }
+        });
+    </script>
     <!-- Main library -->
-    <script src="envoi.js"></script>
+    <script src="js/main.js"></script>
     <script src="js/three.min.js"></script>
     <!-- Helpers -->
     <script src="js/projector.js"></script>
