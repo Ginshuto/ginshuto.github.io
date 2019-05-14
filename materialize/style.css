@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Courier Prime Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Courier Prime Regular'), url('Courier Prime.woff') format('woff');
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: 'Courier Prime Regular';
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.header {
+    width: 100%;
+}

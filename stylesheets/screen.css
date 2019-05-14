@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
@@ -68,28 +67,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* navigation principale */
-/* canvas */
-/* à propos */
-/* Mes compétences */
-/* Mes Travaux */
-/* Me Contacter */
-/* Footer */
-/* line 36, ../sass/screen.scss */
+/* line 27, ../sass/screen.scss */
 body {
-  background-color: #fff;
+  background-color: #ffffff;
   margin: 0px;
-  color: #fff;
+  color: #ffffff;
+  overflow-x: hidden;
 }
 
-/* line 42, ../sass/screen.scss */
+/* line 34, ../sass/screen.scss */
 h1,
 h2,
 h3 {
   font-family: "Oswald", sans-serif;
 }
 
-/* line 48, ../sass/screen.scss */
+/* line 41, ../sass/screen.scss */
 .nav {
   z-index: 2;
   text-align: center;
@@ -100,29 +93,29 @@ h3 {
   width: 100%;
   background: transparent;
 }
-/* line 58, ../sass/screen.scss */
+/* line 51, ../sass/screen.scss */
 .nav ul {
   list-style: none;
   margin: 20px;
 }
-/* line 63, ../sass/screen.scss */
+/* line 56, ../sass/screen.scss */
 .nav li {
   display: inline;
   margin: 20px;
 }
-/* line 68, ../sass/screen.scss */
+/* line 61, ../sass/screen.scss */
 .nav a {
   text-decoration: none;
   font-size: 20px;
-  color: white;
+  color: #ffffff;
   opacity: 1;
 }
-/* line 74, ../sass/screen.scss */
+/* line 67, ../sass/screen.scss */
 .nav a:hover {
   font-weight: bold;
 }
 
-/* line 80, ../sass/screen.scss */
+/* line 73, ../sass/screen.scss */
 .nav2 {
   z-index: 2;
   text-align: center;
@@ -133,60 +126,90 @@ h3 {
   width: 100%;
   background: rgba(122, 162, 214, 0.5);
 }
-/* line 90, ../sass/screen.scss */
+/* line 83, ../sass/screen.scss */
 .nav2 ul {
   list-style: none;
 }
-/* line 94, ../sass/screen.scss */
+/* line 87, ../sass/screen.scss */
 .nav2 li {
   display: inline;
   margin: 20px;
 }
-/* line 99, ../sass/screen.scss */
+/* line 92, ../sass/screen.scss */
 .nav2 a {
   text-decoration: none;
   font-size: 20px;
-  color: white;
+  color: #ffffff;
   opacity: 1;
 }
-/* line 105, ../sass/screen.scss */
+/* line 98, ../sass/screen.scss */
 .nav2 a:hover {
   font-weight: bold;
-  text-decoration: none;
-  color: white;
 }
 
-/* line 113, ../sass/screen.scss */
+@keyframes bounce {
+  0%,
+    20%,
+    50%,
+    80%,
+    100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+/* line 124, ../sass/screen.scss */
+body {
+  background: black;
+}
+
+/* line 128, ../sass/screen.scss */
+.arrow {
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  margin-left: -20px;
+  height: 40px;
+}
+
+/* line 136, ../sass/screen.scss */
+.bounce {
+  animation: bounce 2s infinite;
+}
+
+/* line 142, ../sass/screen.scss */
 #canvas {
   width: 100%;
   overflow: hidden;
   position: relative;
-  z-index: -2;
   top: 0;
   left: 0;
   background-color: #1a1724;
 }
 
-/* line 123, ../sass/screen.scss */
+/* line 151, ../sass/screen.scss */
 div.canvas-content {
   position: absolute;
-  z-index: -1;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #fff;
+  color: #ffffff;
   margin: auto;
   width: 100%;
 }
 
-/* line 135, ../sass/screen.scss */
+/* line 162, ../sass/screen.scss */
 .canvas-content h1 {
   font-size: 9.4em;
   text-align: center;
   margin: 0;
   font-weight: 700;
 }
-/* line 142, ../sass/screen.scss */
+/* line 169, ../sass/screen.scss */
 .canvas-content h2 {
   font-size: 4.7em;
   font-weight: 400;
@@ -195,19 +218,19 @@ div.canvas-content {
   text-align: center;
 }
 
-/* line 151, ../sass/screen.scss */
+/* line 180, ../sass/screen.scss */
 #z2 {
   padding: 5% 0 5% 0;
   background-color: #ffffff;
 }
-/* line 155, ../sass/screen.scss */
+/* line 184, ../sass/screen.scss */
 #z2 h2 {
   text-align: center;
   margin-bottom: 30px;
   font-size: 30px;
   color: #7aa2d6;
 }
-/* line 162, ../sass/screen.scss */
+/* line 191, ../sass/screen.scss */
 #z2 p {
   text-align: center;
   margin: 10px;
@@ -222,7 +245,7 @@ div.canvas-content {
   font-family: "Lato", sans-serif;
 }
 
-/* line 177, ../sass/screen.scss */
+/* line 206, ../sass/screen.scss */
 #line {
   background-color: #7aa2d6;
   height: 4px;
@@ -233,17 +256,17 @@ div.canvas-content {
   margin-top: 7px;
 }
 
-/* line 187, ../sass/screen.scss */
+/* line 216, ../sass/screen.scss */
 #me {
   display: flex;
   justify-content: center;
 }
 
-/* line 192, ../sass/screen.scss */
+/* line 221, ../sass/screen.scss */
 #moi {
   padding-top: 20px;
 }
-/* line 195, ../sass/screen.scss */
+/* line 224, ../sass/screen.scss */
 #moi img {
   border-radius: 50%;
   width: 250px;
@@ -251,21 +274,21 @@ div.canvas-content {
   padding: 25px 0 25px 0;
 }
 
-/* line 203, ../sass/screen.scss */
+/* line 232, ../sass/screen.scss */
 #logo {
   padding-top: 20px;
 }
-/* line 206, ../sass/screen.scss */
+/* line 235, ../sass/screen.scss */
 #logo img {
   width: 300px;
   height: 300px;
 }
 
-/* line 212, ../sass/screen.scss */
+/* line 241, ../sass/screen.scss */
 #cv {
   text-align: center;
 }
-/* line 215, ../sass/screen.scss */
+/* line 244, ../sass/screen.scss */
 #cv button {
   height: 60px;
   width: 200px;
@@ -273,89 +296,89 @@ div.canvas-content {
   border: none;
   border-radius: 50px;
   font-family: "Lato", sans-serif;
-  color: white;
+  color: #ffffff;
   font-size: 18px;
   text-decoration: none;
 }
-/* line 226, ../sass/screen.scss */
+/* line 255, ../sass/screen.scss */
 #cv button:hover {
   font-weight: bold;
   cursor: pointer;
 }
 
-/* line 233, ../sass/screen.scss */
+/* line 264, ../sass/screen.scss */
 #z3 {
   background-color: #7aa2d6;
   padding: 5% 0 5% 0;
 }
-/* line 237, ../sass/screen.scss */
+/* line 268, ../sass/screen.scss */
 #z3 h2 {
   text-align: center;
   font-size: 30px;
-  color: white;
+  color: #ffffff;
   margin-bottom: 30px;
 }
-/* line 244, ../sass/screen.scss */
+/* line 275, ../sass/screen.scss */
 #z3 h3 {
   text-align: center;
   font-size: 30px;
-  color: white;
+  color: #ffffff;
   margin-top: 20px;
 }
 
-/* line 252, ../sass/screen.scss */
+/* line 283, ../sass/screen.scss */
 #competences {
   padding-top: 50px;
   display: flex;
 }
-/* line 256, ../sass/screen.scss */
+/* line 287, ../sass/screen.scss */
 #competences p {
   text-align: center;
   padding: 20px;
   font-size: 20px;
   letter-spacing: 1px;
-  color: white;
+  color: #ffffff;
   font-family: "Lato", sans-serif;
 }
-/* line 265, ../sass/screen.scss */
+/* line 296, ../sass/screen.scss */
 #competences i {
   transition: all ease-in-out 0.5s;
+  font-size: 45px;
 }
-/* line 268, ../sass/screen.scss */
+/* line 300, ../sass/screen.scss */
 #competences i:hover {
   color: #edf1f5;
 }
 
-/* line 274, ../sass/screen.scss */
-#dev {
+/* line 307, ../sass/screen.scss */
+.skill {
   width: 33%;
   text-align: center;
 }
 
-/* line 279, ../sass/screen.scss */
-#ergonomie {
-  width: 33%;
-  text-align: center;
-}
-
-/* line 284, ../sass/screen.scss */
-#webdesign {
-  width: 33%;
-  text-align: center;
-}
-
-/* line 289, ../sass/screen.scss */
+/* line 315, ../sass/screen.scss */
 #z4 {
   padding: 5% 0 5% 0;
+  background-color: #ffffff;
 }
-/* line 292, ../sass/screen.scss */
+/* line 319, ../sass/screen.scss */
 #z4 h2 {
   text-align: center;
   font-size: 30px;
   color: #7aa2d6;
 }
-/* line 298, ../sass/screen.scss */
-#z4 p {
+/* line 325, ../sass/screen.scss */
+#z4 h3 {
+  text-align: center;
+  font-size: 25px;
+  color: #7aa2d6;
+}
+/* line 330, ../sass/screen.scss */
+#z4 h3:nth-child(2) {
+  padding-top: 20px;
+}
+/* line 335, ../sass/screen.scss */
+#z4 .dut {
   text-align: center;
   margin: 20px;
   padding-top: 50px;
@@ -364,166 +387,200 @@ div.canvas-content {
   color: #7aa2d6;
   font-family: "Lato", sans-serif;
 }
-/* line 307, ../sass/screen.scss */
-#z4 p a {
+/* line 344, ../sass/screen.scss */
+#z4 .dut a {
   color: #7aa2d6;
 }
-/* line 310, ../sass/screen.scss */
-#z4 p a:hover {
+/* line 347, ../sass/screen.scss */
+#z4 .dut a:hover {
   font-weight: bold;
 }
-
-/* line 317, ../sass/screen.scss */
-#travaux {
-  padding-top: 50px;
-  width: 100%;
+/* line 353, ../sass/screen.scss */
+#z4 .travail {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+/* line 358, ../sass/screen.scss */
+#z4 .travail img {
+  width: 80%;
+  height: auto;
+  opacity: 0.7;
+  transition: all ease-in-out 0.5s;
+  margin-top: 25px;
+}
+/* line 365, ../sass/screen.scss */
+#z4 .travail img:hover {
+  opacity: 1;
+}
+/* line 370, ../sass/screen.scss */
+#z4 .travail .workCaption {
+  padding: 15px 0 15px 0;
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  color: #7aa2d6;
+}
+/* line 377, ../sass/screen.scss */
+#z4 .travail .workCaption:hover {
+  font-weight: bold;
+}
+/* line 382, ../sass/screen.scss */
+#z4 .travail p {
+  color: #7aa2d6;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+}
+/* line 387, ../sass/screen.scss */
+#z4 .travail p a {
+  color: #7aa2d6;
+}
+/* line 390, ../sass/screen.scss */
+#z4 .travail p a:hover {
+  font-weight: bold;
+}
+/* line 397, ../sass/screen.scss */
+#z4 #webGo,
+#z4 #stages,
+#z4 #dut {
+  padding-bottom: 25px;
+  display: flex;
   text-align: center;
+  flex-wrap: wrap;
+}
+/* line 406, ../sass/screen.scss */
+#z4 #dut {
+  padding-bottom: 0;
 }
 
-/* line 323, ../sass/screen.scss */
-#travail1 {
-  float: left;
-  overflow: hidden;
-  width: 50%;
-  opacity: 0.7;
-  transition: all ease-in-out 0.5s;
-}
-/* line 330, ../sass/screen.scss */
-#travail1:hover {
-  opacity: 1;
-}
-/* line 334, ../sass/screen.scss */
-#travail1 img {
-  width: 90%;
-  height: auto;
-}
-
-/* line 340, ../sass/screen.scss */
-#travail2 {
-  overflow: hidden;
-  width: 50%;
-  opacity: 0.7;
-  transition: all ease-in-out 0.5s;
-}
-/* line 341, ../sass/screen.scss */
-#travail2:hover {
-  opacity: 1;
-}
-/* line 350, ../sass/screen.scss */
-#travail2 img {
-  width: 90%;
-  height: auto;
-}
-
-/* line 356, ../sass/screen.scss */
+/* line 414, ../sass/screen.scss */
 #z5 {
-  padding: 5% 0 5% 0;
+  padding-top: 5%;
   background-color: #7aa2d6;
 }
-/* line 360, ../sass/screen.scss */
+/* line 418, ../sass/screen.scss */
 #z5 h2 {
   text-align: center;
   font-size: 30px;
-  color: white;
+  color: #ffffff;
 }
-/* line 366, ../sass/screen.scss */
+/* line 424, ../sass/screen.scss */
 #z5 p {
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 25px;
   font-size: 20px;
   letter-spacing: 1px;
-  color: white;
+  color: #ffffff;
   font-family: "Lato", sans-serif;
 }
+/* line 433, ../sass/screen.scss */
+#z5 #upArrow {
+  text-align: center;
+  padding-bottom: 2%;
+}
+/* line 437, ../sass/screen.scss */
+#z5 #upArrow .up {
+  margin-top: 30px;
+  height: 25px;
+}
 
-/* line 377, ../sass/screen.scss */
-form {
+/* line 444, ../sass/screen.scss */
+#contact {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+}
+/* line 449, ../sass/screen.scss */
+#contact #infos {
+  padding-top: 9%;
+  text-align: center;
+  width: 40%;
+}
+/* line 454, ../sass/screen.scss */
+#contact #infos address {
+  font-family: "Lato", sans-serif;
+  font-size: 25px;
+}
+/* line 458, ../sass/screen.scss */
+#contact #infos address a {
+  text-decoration: none;
+  font-style: italic;
+  color: #ffffff;
+}
+/* line 463, ../sass/screen.scss */
+#contact #infos address a:hover {
+  font-weight: bold;
+}
+/* line 468, ../sass/screen.scss */
+#contact #infos address i {
+  margin-right: 10px;
+}
+/* line 474, ../sass/screen.scss */
+#contact #formulaire {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
   text-align: center;
   color: #7aa2d6;
 }
-
-/* line 382, ../sass/screen.scss */
-input[type="text"] {
+/* line 481, ../sass/screen.scss */
+#contact #formulaire #name,
+#contact #formulaire #mailObject {
+  display: flex;
+}
+/* line 486, ../sass/screen.scss */
+#contact #formulaire input[type="text"],
+#contact #formulaire input[type="email"] {
   padding: 14px 15px;
   border-radius: 50px;
   width: 50%;
   color: #7aa2d6;
   border: none;
   font-family: "Lato", sans-serif;
-  margin: 20px;
+  margin: 10px;
 }
-
-/* line 392, ../sass/screen.scss */
-input[type="email"] {
-  padding: 14px 15px;
-  border-radius: 50px;
-  width: 50%;
-  color: #7aa2d6;
-  border: none;
-  font-family: "Lato", sans-serif;
-  margin: 20px;
-}
-
-/* line 402, ../sass/screen.scss */
-textarea {
+/* line 497, ../sass/screen.scss */
+#contact #formulaire textarea {
+  margin-top: 10px;
   border: none;
   border-radius: 25px;
-  width: 54%;
   height: 250px;
   padding: 18px;
   background: white;
   font-family: "Lato", sans-serif;
 }
-
-/* line 412, ../sass/screen.scss */
-textarea[id="message"] {
+/* line 507, ../sass/screen.scss */
+#contact #formulaire textarea[id="message"] {
   color: #7aa2d6;
 }
-
-/* line 416, ../sass/screen.scss */
-::placeholder {
+/* line 511, ../sass/screen.scss */
+#contact #formulaire ::placeholder {
   color: #7aa2d6;
   font-family: "Lato", sans-serif;
   font-weight: bold;
 }
-
-/* line 422, ../sass/screen.scss */
-input[type="submit"] {
-  margin-top: 25px;
+/* line 517, ../sass/screen.scss */
+#contact #formulaire input[type="submit"] {
+  margin-top: 20px;
   font-family: "Lato", sans-serif;
   height: 50px;
   width: 135px;
-  background-color: white;
+  background-color: #ffffff;
   border: none;
   border-radius: 50px;
   color: #7aa2d6;
   font-size: 18px;
 }
-/* line 433, ../sass/screen.scss */
-input[type="submit"]:hover {
+/* line 528, ../sass/screen.scss */
+#contact #formulaire input[type="submit"]:hover {
   font-weight: bold;
   cursor: pointer;
 }
 
-/* line 439, ../sass/screen.scss */
-#nom {
-  width: 50%;
-  float: left;
-  text-align: right;
-}
-
-/* line 445, ../sass/screen.scss */
-#email {
-  width: 50%;
-  float: left;
-  text-align: left;
-}
-
-/* line 451, ../sass/screen.scss */
+/* line 540, ../sass/screen.scss */
 footer {
   font-family: "Lato", sans-serif;
-  background-color: white;
+  background-color: #ffffff;
   padding: 15px 0px;
   color: #7aa2d6;
   font-weight: bold;
@@ -532,18 +589,23 @@ footer {
   letter-spacing: 1px;
 }
 
-/* line 462, ../sass/screen.scss */
+/* line 551, ../sass/screen.scss */
 #footer {
-  padding: 20px;
+  padding: 15px;
   list-style: none;
 }
-/* line 466, ../sass/screen.scss */
+/* line 555, ../sass/screen.scss */
 #footer li {
-  display: inline;
+  display: inline-block;
   margin: 15px;
   margin-right: 0;
 }
-/* line 472, ../sass/screen.scss */
+/* line 561, ../sass/screen.scss */
+#footer .twitter,
+#footer .github {
+  margin-left: 10px;
+}
+/* line 566, ../sass/screen.scss */
 #footer a {
   text-decoration: none;
   color: #7aa2d6;
@@ -551,12 +613,12 @@ footer {
   display: inline-block;
   transition: all ease-in-out 0.5s;
 }
-/* line 479, ../sass/screen.scss */
+/* line 573, ../sass/screen.scss */
 #footer a:hover {
   font-weight: bold;
   opacity: 0.8;
 }
-/* line 488, ../sass/screen.scss */
-#footer > li > a > i:before {
+/* line 582, ../sass/screen.scss */
+#footer li a i:before {
   font-size: 23px;
 }

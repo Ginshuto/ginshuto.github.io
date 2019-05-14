@@ -1,0 +1,382 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 28, ../sass/screen.scss */
+body {
+  margin: 0 5% 0 5%;
+  font-family: "Roboto", sans-serif;
+  color: #FFFFFF;
+}
+
+@keyframes imgOpacity {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0.1;
+  }
+  10% {
+    opacity: 0.2;
+  }
+  15% {
+    opacity: 0.3;
+  }
+  20% {
+    opacity: 0.4;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  30% {
+    opacity: 0.6;
+  }
+  35% {
+    opacity: 0.7;
+  }
+  40% {
+    opacity: 0.8;
+  }
+  45% {
+    opacity: 0.9;
+  }
+  50% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 0.9;
+  }
+  60% {
+    opacity: 0.8;
+  }
+  65% {
+    opacity: 0.7;
+  }
+  70% {
+    opacity: 0.6;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  80% {
+    opacity: 0.4;
+  }
+  85% {
+    opacity: 0.3;
+  }
+  90% {
+    opacity: 0.2;
+  }
+  95% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* line 121, ../sass/screen.scss */
+header {
+  position: relative;
+}
+/* line 124, ../sass/screen.scss */
+header img:first-child {
+  display: block;
+  width: 100%;
+}
+/* line 129, ../sass/screen.scss */
+header .logo {
+  position: absolute;
+  top: 15%;
+  left: 25%;
+  animation: imgOpacity 4s infinite;
+}
+
+/* line 137, ../sass/screen.scss */
+#nsa {
+  background-color: #C8E2F1;
+  display: flex;
+  text-align: center;
+}
+/* line 142, ../sass/screen.scss */
+#nsa .nsa {
+  margin: 1.3333333333vw 0.6666666667vw 1.3333333333vw 0.6666666667vw;
+}
+/* line 145, ../sass/screen.scss */
+#nsa .nsa img {
+  width: 50%;
+  padding-top: 1.3333333333vw;
+}
+/* line 150, ../sass/screen.scss */
+#nsa .nsa h3 {
+  font-size: 1.6666666667vw;
+  font-weight: bold;
+  padding: 1.0vw;
+}
+/* line 156, ../sass/screen.scss */
+#nsa .nsa p {
+  padding: 1.0vw 2.6666666667vw 1.0vw 2.6666666667vw;
+  font-size: 1.3333333333vw;
+  line-height: 125%;
+}
+
+/* line 165, ../sass/screen.scss */
+#colonne {
+  display: flex;
+}
+/* line 168, ../sass/screen.scss */
+#colonne .un {
+  background-color: #D2EFFF;
+  padding-right: 0.3333333333vw;
+  width: 25%;
+}
+/* line 174, ../sass/screen.scss */
+#colonne .deux {
+  background-color: #BEE3F8;
+  width: 25%;
+  padding-right: 0.3333333333vw;
+}
+/* line 180, ../sass/screen.scss */
+#colonne .trois {
+  background-color: #A8D3EC;
+  padding-right: 0.3333333333vw;
+  width: 25%;
+}
+/* line 186, ../sass/screen.scss */
+#colonne .quatre {
+  background-color: #91C3DF;
+  padding-right: 0.3333333333vw;
+  width: 25%;
+}
+/* line 192, ../sass/screen.scss */
+#colonne h2 {
+  text-align: right;
+  font-size: 2.3333333333vw;
+}
+/* line 196, ../sass/screen.scss */
+#colonne h2 span {
+  font-size: 2.6666666667vw;
+}
+/* line 201, ../sass/screen.scss */
+#colonne p {
+  line-height: 150%;
+  padding: 2.0vw 1.0vw 2.0vw 1.0vw;
+  font-size: 1.6666666667vw;
+  text-align: center;
+}
+
+/* line 209, ../sass/screen.scss */
+#slider {
+  position: relative;
+}
+/* line 212, ../sass/screen.scss */
+#slider .slider1 {
+  width: 100%;
+  display: block;
+}
+/* line 217, ../sass/screen.scss */
+#slider .slider2 {
+  width: 100%;
+  display: none;
+}
+/* line 222, ../sass/screen.scss */
+#slider .back {
+  position: absolute;
+  top: 15%;
+  left: -15%;
+  transform: scale(0.15);
+  animation: imgOpacity 2s infinite;
+  z-index: 99;
+}
+/* line 230, ../sass/screen.scss */
+#slider .back:hover {
+  cursor: pointer;
+}
+/* line 235, ../sass/screen.scss */
+#slider .next {
+  position: absolute;
+  top: 15%;
+  right: -15%;
+  transform: scale(0.15);
+  animation: imgOpacity 2s infinite;
+  z-index: 99;
+}
+/* line 243, ../sass/screen.scss */
+#slider .next:hover {
+  cursor: pointer;
+}
+
+/* line 249, ../sass/screen.scss */
+#newsletter {
+  background-color: #A8D3EC;
+  text-align: center;
+  padding: 2.0vw 0 2.0vw 0;
+}
+/* line 254, ../sass/screen.scss */
+#newsletter h2 {
+  font-size: 1.6666666667vw;
+  font-weight: bold;
+  padding-bottom: 1.3333333333vw;
+}
+/* line 260, ../sass/screen.scss */
+#newsletter input[type="email"] {
+  border: none;
+  border-radius: 0.1333333333vw;
+  padding: 0.5333333333vw;
+  margin-right: 2.0vw;
+  width: 20%;
+}
+/* line 268, ../sass/screen.scss */
+#newsletter input[type="submit"] {
+  background-color: #5E8FAC;
+  color: #FFFFFF;
+  padding: 0.5333333333vw;
+  border: none;
+  border-radius: 0.1333333333vw;
+}
+/* line 275, ../sass/screen.scss */
+#newsletter input[type="submit"]:hover {
+  font-weight: bold;
+}
+
+/* line 281, ../sass/screen.scss */
+footer {
+  background-color: #77B7DD;
+  padding: 1.3333333333vw 0 1.3333333333vw 0;
+  font-size: 1.3333333333vw;
+}
+/* line 286, ../sass/screen.scss */
+footer a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+/* line 291, ../sass/screen.scss */
+footer p {
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  /* line 297, ../sass/screen.scss */
+  body {
+    margin: 0;
+  }
+
+  /* line 302, ../sass/screen.scss */
+  header .logo {
+    top: 10%;
+    left: 17%;
+  }
+
+  /* line 309, ../sass/screen.scss */
+  #slider .back {
+    top: 0%;
+    left: -21%;
+  }
+  /* line 314, ../sass/screen.scss */
+  #slider .next {
+    top: 0%;
+    right: -21%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* line 323, ../sass/screen.scss */
+  header .logo {
+    top: 7%;
+  }
+
+  /* line 329, ../sass/screen.scss */
+  #slider .back {
+    top: -15%;
+    left: -28%;
+  }
+  /* line 334, ../sass/screen.scss */
+  #slider .next {
+    top: -15%;
+    right: -28%;
+  }
+}
+@media screen and (min-width: 425px) and (max-width: 767px) {
+  /* line 343, ../sass/screen.scss */
+  header .logo {
+    top: 5%;
+    left: 13%;
+    width: 70%;
+  }
+
+  /* line 351, ../sass/screen.scss */
+  #slider .back {
+    top: -65%;
+    left: -55%;
+    transform: scale(0.08);
+  }
+  /* line 357, ../sass/screen.scss */
+  #slider .next {
+    top: -65%;
+    right: -55%;
+    transform: scale(0.08);
+  }
+}
