@@ -102,7 +102,7 @@
         //sinon (une animation est en cours)
         else {
             // on affiche le message
-            alert("WTF MEK TU VA TRO VITE, 1 SEUL EMOJI A LA FOI STARFOULLAH")
+            alert("Veuillez attendre la fin de l'animation pour en relancer une autre.")
 
         }
 
@@ -196,7 +196,7 @@
                 }, "-=0.5")
         } else {
             // on affiche le message
-            alert("WTF MEK TU VA TRO VITE, 1 SEUL EMOJI A LA FOI STARFOULLAH")
+            alert("Veuillez attendre la fin de l'animation pour en relancer une autre.")
 
         }
     }
@@ -289,7 +289,7 @@
                 }, "-=0.5")
         } else {
             // on affiche le message
-            alert("WTF MEK TU VA TRO VITE, 1 SEUL EMOJI A LA FOI STARFOULLAH")
+            alert("Veuillez attendre la fin de l'animation pour en relancer une autre.")
 
         }
     }
@@ -382,7 +382,7 @@
                 }, "-=0.5")
         } else {
             // on affiche le message
-            alert("WTF MEK TU VA TRO VITE, 1 SEUL EMOJI A LA FOI STARFOULLAH")
+            alert("Veuillez attendre la fin de l'animation pour en relancer une autre.")
 
         }
     }
@@ -475,7 +475,7 @@
                 }, "-=0.5")
         } else {
             // on affiche le message
-            alert("WTF MEK TU VA TRO VITE, 1 SEUL EMOJI A LA FOI STARFOULLAH")
+            alert("Veuillez attendre la fin de l'animation pour en relancer une autre.")
 
         }
     }
