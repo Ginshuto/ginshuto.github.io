@@ -161,15 +161,14 @@ body {
     background: rgba(122, 162, 214, 0.85);
 
     .overlay-close {
-        width: 80px;
-        height: 80px;
+        width: 33px;
+        height: 45px;
         position: absolute;
-        right: 20px;
-        top: 20px;
+        right: 17px;
+        top: 10px;
         overflow: hidden;
         border: none;
         background: url(../images/cross.png) no-repeat center center;
-        text-indent: 200%;
         color: transparent;
         outline: none;
         z-index: 100;
@@ -219,10 +218,6 @@ body {
 
 }
 
-
-/////////////////////////////////////
-
-/* Effects */
 .overlay-slidedown {
     visibility: hidden;
     -webkit-transform: translateY(-100%);
@@ -238,6 +233,10 @@ body {
     -webkit-transition: -webkit-transform 0.4s ease-in-out;
     transition: transform 0.4s ease-in-out;
 }
+
+/////////////////////////////////////
+
+
 
 .arrow {
     position: absolute;
@@ -756,9 +755,11 @@ footer {
             }
         }
     }
-    .arrow{
-        left: 47%;
+
+    .arrow {
+        height: 25px;
     }
+
     #z2 {
         #me {
             #moi {
@@ -810,6 +811,25 @@ footer {
                         font-size: 2.5em;
                     }
                 }
+            }
+        }
+    }
+
+    #z5 {
+        #contact {
+            #infos {
+                address {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    footer {
+        #footer {
+            li {
+                margin: 10px;
+                margin-right: 0;
             }
         }
     }
