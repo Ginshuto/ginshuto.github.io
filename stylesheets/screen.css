@@ -770,57 +770,62 @@ footer #footer li a i:before {
     margin-top: 0.5em;
   }
 
-  /* line 762, ../sass/screen.scss */
+  /* line 759, ../sass/screen.scss */
+  .arrow {
+    left: 47%;
+  }
+
+  /* line 764, ../sass/screen.scss */
   #z2 #me #moi {
     padding-top: 20px;
     width: 45%;
   }
-  /* line 766, ../sass/screen.scss */
+  /* line 768, ../sass/screen.scss */
   #z2 #me #moi img {
     border-radius: 50%;
     width: 100%;
     padding: 0;
   }
-  /* line 773, ../sass/screen.scss */
+  /* line 775, ../sass/screen.scss */
   #z2 #me #logo {
     padding-top: 20px;
     width: 45%;
   }
-  /* line 777, ../sass/screen.scss */
+  /* line 779, ../sass/screen.scss */
   #z2 #me #logo img {
     width: 100%;
     height: auto;
   }
-  /* line 784, ../sass/screen.scss */
+  /* line 786, ../sass/screen.scss */
   #z2 p {
     width: 90%;
     margin: 0 5% 0 5%;
   }
 
-  /* line 791, ../sass/screen.scss */
+  /* line 793, ../sass/screen.scss */
   #z3 #competences {
     padding-top: 25px;
   }
-  /* line 794, ../sass/screen.scss */
+  /* line 796, ../sass/screen.scss */
   #z3 #competences .skill {
     width: 100%;
     padding-bottom: 25px;
   }
 }
 @media screen and (max-width: 376px) {
-  /* line 807, ../sass/screen.scss */
+  /* line 809, ../sass/screen.scss */
   .overlay nav ul li a {
     font-size: 2.5em;
   }
 }
 @media screen and (max-height: 30.5em) {
-  /* line 817, ../sass/screen.scss */
+  /* line 819, ../sass/screen.scss */
   .overlay nav {
     height: 70%;
     font-size: 34px;
   }
 
-  /* line 822, ../sass/screen.scss */
+  /* line 824, ../sass/screen.scss */
   .overlay ul li {
     min-height: 34px;
   }
