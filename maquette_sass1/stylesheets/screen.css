@@ -1,0 +1,346 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 24, ../sass/screen.scss */
+body {
+  margin: 0 5% 0 5%;
+  font-family: "Roboto", sans-serif;
+}
+
+/* line 29, ../sass/screen.scss */
+#navigation {
+  padding: 15px 5% 15px 5%;
+  background-color: rgba(255, 255, 255, 0.5);
+  text-align: right;
+  position: fixed;
+  z-index: 99;
+}
+/* line 36, ../sass/screen.scss */
+#navigation ul {
+  padding-right: 2%;
+}
+/* line 40, ../sass/screen.scss */
+#navigation li {
+  display: inline;
+  margin-right: 20px;
+}
+/* line 44, ../sass/screen.scss */
+#navigation li:first-child {
+  margin-right: 35%;
+}
+/* line 47, ../sass/screen.scss */
+#navigation li:first-child img {
+  transition: transform 1s ease-in-out;
+}
+/* line 50, ../sass/screen.scss */
+#navigation li:first-child img:hover {
+  transform: rotate(720deg);
+}
+/* line 57, ../sass/screen.scss */
+#navigation img {
+  width: 5%;
+}
+
+/* line 63, ../sass/screen.scss */
+#header img {
+  width: 100%;
+}
+
+/* line 68, ../sass/screen.scss */
+#aea {
+  display: flex;
+  text-align: center;
+  margin: 30px 0 30px 0;
+}
+/* line 73, ../sass/screen.scss */
+#aea .aea {
+  background-color: #F2F2F2;
+  margin: 20px 10px 20px 10px;
+  transition: box-shadow 1s ease-in-out;
+}
+/* line 78, ../sass/screen.scss */
+#aea .aea img {
+  width: 50%;
+  padding-top: 20px;
+}
+/* line 83, ../sass/screen.scss */
+#aea .aea h3 {
+  padding: 15px;
+  font-size: 35px;
+}
+/* line 88, ../sass/screen.scss */
+#aea .aea p {
+  padding: 15px 40px 15px 40px;
+  font-size: 20px;
+}
+/* line 93, ../sass/screen.scss */
+#aea .aea:hover {
+  box-shadow: 2px 2px 2px #000000;
+}
+
+/* line 99, ../sass/screen.scss */
+#tour {
+  position: relative;
+}
+/* line 102, ../sass/screen.scss */
+#tour img:first-child {
+  width: 100%;
+}
+/* line 106, ../sass/screen.scss */
+#tour img:nth-child(3) {
+  width: 22%;
+  position: absolute;
+  right: 8.5%;
+  top: -22%;
+  z-index: 2;
+}
+/* line 114, ../sass/screen.scss */
+#tour h2 {
+  position: absolute;
+  left: 15%;
+  top: 30%;
+  font-weight: bold;
+  font-size: 35px;
+}
+/* line 122, ../sass/screen.scss */
+#tour a {
+  z-index: 1;
+  position: absolute;
+  right: 26%;
+  top: 35%;
+  text-decoration: none;
+  color: #00BCFF;
+  border: 1px solid #00BCFF;
+  padding: 15px;
+}
+/* line 132, ../sass/screen.scss */
+#tour a:hover {
+  font-weight: bold;
+}
+
+/* line 138, ../sass/screen.scss */
+#explorelearn {
+  display: flex;
+  margin: 30px 0 30px 0;
+}
+/* line 142, ../sass/screen.scss */
+#explorelearn .explore,
+#explorelearn .learn {
+  width: 47.5%;
+}
+/* line 146, ../sass/screen.scss */
+#explorelearn .explore img,
+#explorelearn .learn img {
+  margin-left: 20%;
+  width: 70%;
+}
+/* line 152, ../sass/screen.scss */
+#explorelearn .learn {
+  border: 1px solid #000000;
+  text-align: center;
+}
+/* line 156, ../sass/screen.scss */
+#explorelearn .learn h2 {
+  font-size: 35px;
+  font-weight: bold;
+  margin: 30px 0 30px 0;
+  transition: color 1s ease-in-out;
+}
+/* line 162, ../sass/screen.scss */
+#explorelearn .learn h2 .et {
+  color: #BDD0F9;
+  transition: color 1s ease-in-out;
+}
+/* line 167, ../sass/screen.scss */
+#explorelearn .learn h2:hover {
+  color: #BDD0F9;
+}
+/* line 170, ../sass/screen.scss */
+#explorelearn .learn h2:hover .et {
+  color: #000000;
+}
+/* line 176, ../sass/screen.scss */
+#explorelearn .learn p {
+  font-size: 30px;
+  padding: 0px 15% 0 15%;
+  margin-bottom: 15px;
+}
+
+/* line 184, ../sass/screen.scss */
+.contacthero {
+  padding-left: 10%;
+  margin: 30px 0 30px 0;
+  font-size: 35px;
+}
+/* line 189, ../sass/screen.scss */
+.contacthero span {
+  font-weight: bold;
+}
+
+/* line 194, ../sass/screen.scss */
+#contact {
+  display: flex;
+  margin: 30px 0 30px 0;
+}
+/* line 198, ../sass/screen.scss */
+#contact #hero {
+  width: 50%;
+  padding-left: 10%;
+  margin-right: 5%;
+  display: flex;
+  flex-direction: column;
+}
+/* line 205, ../sass/screen.scss */
+#contact #hero .hero {
+  margin-bottom: 30px;
+}
+/* line 208, ../sass/screen.scss */
+#contact #hero .hero img {
+  float: left;
+  width: 25%;
+  padding-right: 5%;
+}
+/* line 214, ../sass/screen.scss */
+#contact #hero .hero p {
+  font-size: 20px;
+}
+/* line 220, ../sass/screen.scss */
+#contact #form {
+  margin-right: 5%;
+  width: 50%;
+  text-align: center;
+}
+/* line 225, ../sass/screen.scss */
+#contact #form form {
+  background-color: #ECECEC;
+  padding: 20px 0 20px 0;
+}
+/* line 229, ../sass/screen.scss */
+#contact #form form label {
+  text-align: left;
+  margin-left: 5%;
+  display: block;
+  font-size: 20px;
+  color: #B4B4B4;
+  padding: 0.33vw;
+}
+/* line 238, ../sass/screen.scss */
+#contact #form form input[type="text"],
+#contact #form form input[type="email"] {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  padding: 0.45vw 0 0.45vw 0;
+  margin-bottom: 0.33vw;
+  margin-top: 0.33vw;
+}
+/* line 249, ../sass/screen.scss */
+#contact #form form textarea {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  margin-bottom: 0.33vw;
+  margin-top: 0.33vw;
+  padding: 1.33vw 0 1.33vw 0;
+}
+/* line 260, ../sass/screen.scss */
+#contact #form input[type="submit"] {
+  background-color: #BDD0F9;
+  border: none;
+  border-radius: 5px;
+  color: #FFFFFF;
+  font-size: 20px;
+  padding: 5px 15px 5px 15px;
+  margin: 30px 0 30px 0;
+}
+
+/* line 273, ../sass/screen.scss */
+#footer img {
+  width: 100%;
+  display: block;
+}
+
+/* line 279, ../sass/screen.scss */
+footer {
+  background-color: #63779F;
+  padding: 20px 0 20px 0;
+  color: #FFFFFF;
+  font-size: 20px;
+}
+/* line 285, ../sass/screen.scss */
+footer a {
+  color: #000000;
+  text-decoration: none;
+}
+/* line 290, ../sass/screen.scss */
+footer p {
+  text-align: center;
+}

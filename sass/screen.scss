@@ -23,19 +23,39 @@ $background-color-3: #7aa2d6;
     margin-bottom: 30px;
 }
 
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-30px);
+    }
+
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
 // Corps de la page
 body {
     background-color: $background-color-1;
     margin: 0px;
     color: $color-1;
     overflow-x: hidden;
+
+    h1,
+    h2,
+    h3 {
+        font-family: $font-family-1;
+    }
 }
 
-h1,
-h2,
-h3 {
-    font-family: $font-family-1;
-}
 
 // navigation principale
 .nav {
@@ -101,30 +121,6 @@ h3 {
     }
 }
 
-@keyframes bounce {
-
-    0%,
-    20%,
-    50%,
-    80%,
-    100% {
-        transform: translateY(0);
-    }
-
-    40% {
-        transform: translateY(-30px);
-    }
-
-    60% {
-        transform: translateY(-15px);
-    }
-}
-
-
-body {
-    background: black;
-}
-
 .arrow {
     position: absolute;
     bottom: 2%;
@@ -134,7 +130,7 @@ body {
 }
 
 .bounce {
-    animation: bounce 2s infinite;
+    animation: bounce 3s infinite;
 }
 
 // canvas
@@ -146,32 +142,30 @@ body {
     top: 0;
     left: 0;
     background-color: $background-color-2;
-}
 
-div.canvas-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: $color-1;
-    margin: auto;
-    width: 100%;
-}
+    .canvas-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $color-1;
+        margin: auto;
+        width: 100%;
 
-.canvas-content {
-    h1 {
-        font-size: 9.4em;
-        text-align: center;
-        margin: 0;
-        font-weight: 700;
-    }
+        h1 {
+            font-size: 9.4em;
+            text-align: center;
+            margin: 0;
+            font-weight: 700;
+        }
 
-    h2 {
-        font-size: 4.7em;
-        font-weight: 400;
-        margin-top: 1em;
-        margin-bottom: 0;
-        text-align: center;
+        h2 {
+            font-size: 4.7em;
+            font-weight: 400;
+            margin-top: 1em;
+            margin-bottom: 0;
+            text-align: center;
+        }
     }
 }
 
@@ -201,63 +195,56 @@ div.canvas-content {
         color: $color-2;
         font-family: $font-family-2;
     }
-}
 
-#line {
-    background-color: $background-color-3;
-    height: 4px;
-    border-radius: 25px;
-    width: 60px;
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 7px;
-}
-
-#me {
-    display: flex;
-    justify-content: center;
-}
-
-#moi {
-    padding-top: 20px;
-
-    img {
-        border-radius: 50%;
-        width: 250px;
-        height: auto;
-        padding: 25px 0 25px 0;
+    #me {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
     }
-}
 
-#logo {
-    padding-top: 20px;
+    #moi {
+        padding-top: 20px;
 
-    img {
-        width: 300px;
-        height: 300px;
-    }
-}
-
-#cv {
-    text-align: center;
-
-    button {
-        height: 60px;
-        width: 200px;
-        background-color: $background-color-3;
-        border: none;
-        border-radius: 50px;
-        font-family: $font-family-2;
-        color: $color-1;
-        font-size: 18px;
-        text-decoration: none;
-
-        &:hover {
-            font-weight: bold;
-            cursor: pointer;
+        img {
+            border-radius: 50%;
+            width: 250px;
+            height: auto;
+            padding: 25px 0 25px 0;
         }
     }
+
+    #logo {
+        padding-top: 20px;
+
+        img {
+            width: 300px;
+            height: 300px;
+        }
+    }
+
+    #cv {
+        text-align: center;
+
+        button {
+            height: 60px;
+            width: 200px;
+            background-color: $background-color-3;
+            border: none;
+            border-radius: 50px;
+            font-family: $font-family-2;
+            color: $color-1;
+            font-size: 18px;
+            text-decoration: none;
+
+            &:hover {
+                font-weight: bold;
+                cursor: pointer;
+            }
+        }
+    }
+
 }
+
 
 // Mes compétences
 
@@ -278,36 +265,36 @@ div.canvas-content {
         color: $color-1;
         margin-top: 20px;
     }
-}
 
-#competences {
-    padding-top: 50px;
-    display: flex;
+    #competences {
+        padding-top: 50px;
+        display: flex;
 
-    p {
-        text-align: center;
-        padding: 20px;
-        font-size: 20px;
-        letter-spacing: 1px;
-        color: $color-1;
-        font-family: $font-family-2;
-    }
+        p {
+            text-align: center;
+            padding: 20px;
+            font-size: 20px;
+            letter-spacing: 1px;
+            color: $color-1;
+            font-family: $font-family-2;
+        }
 
-    i {
-        transition: all ease-in-out 0.5s;
-        font-size: 45px;
+        i {
+            transition: all ease-in-out 0.5s;
+            font-size: 45px;
 
-        &:hover {
-            color: $color-3;
+            &:hover {
+                color: $color-3;
+            }
+        }
+
+        .skill {
+            width: 33%;
+            text-align: center;
         }
     }
 }
 
-
-.skill {
-    width: 33%;
-    text-align: center;
-}
 
 
 // Mes Travaux
@@ -330,6 +317,20 @@ div.canvas-content {
         &:nth-child(2) {
             padding-top: 20px;
         }
+    }
+
+    #webGo,
+    #stages,
+    #dut {
+        padding-bottom: 25px;
+        display: flex;
+        text-align: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #dut {
+        padding-bottom: 0;
     }
 
     .dut {
@@ -393,19 +394,6 @@ div.canvas-content {
             }
         }
     }
-
-    #webGo,
-    #stages,
-    #dut {
-        padding-bottom: 25px;
-        display: flex;
-        text-align: center;
-        flex-wrap: wrap;
-    }
-
-    #dut {
-        padding-bottom: 0;
-    }
 }
 
 
@@ -430,6 +418,98 @@ div.canvas-content {
         font-family: $font-family-2;
     }
 
+    #contact {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-evenly;
+
+        #infos {
+            padding-top: 9%;
+            text-align: center;
+            width: 40%;
+
+            address {
+                font-family: $font-family-2;
+                font-size: 25px;
+
+                a {
+                    text-decoration: none;
+                    font-style: italic;
+                    color: $color-1;
+
+                    &:hover {
+                        font-weight: bold;
+                    }
+                }
+
+                i {
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        #formulaire {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            color: $color-2;
+
+            #name,
+            #mailObject {
+                display: flex;
+            }
+
+            input[type="text"],
+            input[type="email"] {
+                padding: 14px 15px;
+                border-radius: 50px;
+                width: 50%;
+                color: $color-2;
+                border: none;
+                font-family: $font-family-2;
+                margin: 10px;
+            }
+
+            textarea {
+                margin-top: 10px;
+                border: none;
+                border-radius: 25px;
+                height: 250px;
+                padding: 18px;
+                background: white;
+                font-family: $font-family-2;
+            }
+
+            textarea[id="message"] {
+                color: $color-2;
+            }
+
+            ::placeholder {
+                color: $color-2;
+                font-family: $font-family-2;
+                font-weight: bold;
+            }
+
+            input[type="submit"] {
+                margin-top: 20px;
+                font-family: $font-family-2;
+                height: 50px;
+                width: 135px;
+                background-color: $background-color-1;
+                border: none;
+                border-radius: 50px;
+                color: $color-2;
+                font-size: 18px;
+
+                &:hover {
+                    font-weight: bold;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
     #upArrow {
         text-align: center;
         padding-bottom: 2%;
@@ -441,97 +521,7 @@ div.canvas-content {
     }
 }
 
-#contact {
-    margin-top: 30px;
-    display: flex;
-    justify-content: space-evenly;
 
-    #infos {
-        padding-top: 9%;
-        text-align: center;
-        width: 40%;
-
-        address {
-            font-family: $font-family-2;
-            font-size: 25px;
-
-            a {
-                text-decoration: none;
-                font-style: italic;
-                color: $color-1;
-
-                &:hover {
-                    font-weight: bold;
-                }
-            }
-
-            i {
-                margin-right: 10px;
-            }
-        }
-    }
-
-    #formulaire {
-        width: 40%;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        color: $color-2;
-
-        #name,
-        #mailObject {
-            display: flex;
-        }
-
-        input[type="text"],
-        input[type="email"] {
-            padding: 14px 15px;
-            border-radius: 50px;
-            width: 50%;
-            color: $color-2;
-            border: none;
-            font-family: $font-family-2;
-            margin: 10px;
-        }
-
-        textarea {
-            margin-top: 10px;
-            border: none;
-            border-radius: 25px;
-            height: 250px;
-            padding: 18px;
-            background: white;
-            font-family: $font-family-2;
-        }
-
-        textarea[id="message"] {
-            color: $color-2;
-        }
-
-        ::placeholder {
-            color: $color-2;
-            font-family: $font-family-2;
-            font-weight: bold;
-        }
-
-        input[type="submit"] {
-            margin-top: 20px;
-            font-family: $font-family-2;
-            height: 50px;
-            width: 135px;
-            background-color: $background-color-1;
-            border: none;
-            border-radius: 50px;
-            color: $color-2;
-            font-size: 18px;
-
-            &:hover {
-                font-weight: bold;
-                cursor: pointer;
-            }
-        }
-    }
-}
 
 
 
@@ -546,43 +536,59 @@ footer {
     text-align: center;
     font-size: 17px;
     letter-spacing: 1px;
+
+    #footer {
+        padding: 10px;
+        list-style: none;
+
+        .twitter,
+        .github {
+            margin-left: 10px;
+        }
+
+        li {
+            display: inline-block;
+            margin: 15px;
+            margin-right: 0;
+
+            a {
+                text-decoration: none;
+                color: $color-2;
+                opacity: 1;
+                display: inline-block;
+                transition: all ease-in-out 0.5s;
+
+                &:hover {
+                    font-weight: bold;
+                    opacity: 0.8;
+                }
+
+                i {
+                    &:before {
+                        font-size: 23px;
+                    }
+                }
+            }
+        }
+    }
 }
 
-#footer {
-    padding: 15px;
-    list-style: none;
+@media screen and (max-width: 768px) {
+    #canvas {
+        .canvas-content {
+            h1 {
+                font-size: 7.4em;
+            }
 
-    li {
-        display: inline-block;
-        margin: 15px;
-        margin-right: 0;
-    }
-
-    .twitter,
-    .github {
-        margin-left: 10px;
-    }
-
-    a {
-        text-decoration: none;
-        color: $color-2;
-        opacity: 1;
-        display: inline-block;
-        transition: all ease-in-out 0.5s;
-
-        &:hover {
-            font-weight: bold;
-            opacity: 0.8;
+            h2 {
+                font-size: 3.7em;
+            }
         }
     }
 
-    li {
-        a {
-            i {
-                &:before {
-                    font-size: 23px;
-                }
-            }
+    #z4 {
+        .travail {
+            width: 100%;
         }
     }
 }
