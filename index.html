@@ -40,6 +40,29 @@
 </head>
 
 <body>
+    <!-- Menu Burger -->
+    <div class="overlay overlay-slidedown">
+        <button type="button" class="overlay-close">Close</button>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#canvas" class="un">Accueil</a>
+                </li>
+                <li>
+                    <a href="#z2" class="deux">Qui suis-je ?</a>
+                </li>
+                <li>
+                    <a href="#z3" class="trois">Mes Compétences</a>
+                </li>
+                <li>
+                    <a href="#z4" class="quatre">Mes Réalisations</a>
+                </li>
+                <li>
+                    <a href="#z5" class="cinq">Me Contacter</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
     <!--Header : Canvas et Navbar -->
     <header tabindex="0">
         <div class="nav">
@@ -62,6 +85,9 @@
                     </li>
                 </ul>
             </nav>
+        </div>
+        <div class="navMobile">
+            <button id="trigger-overlay" class="transparent" type="button"><i class="fas fa-bars"></i></button>
         </div>
         <section id="canvas" class="gradient">
             <div class="canvas-content">
@@ -264,7 +290,7 @@
                 </div>
                 <div id="mailObject">
                     <input type="email" name="email" placeholder="Votre adresse mail" required>
-                    <input type="text" name="subject" placeholder="Objet de votre message" required>
+                    <input type="text" name="subject" placeholder="Objet du message" required>
                 </div>
                 <textarea name="message" id="message" placeholder="Votre message..." required></textarea>
                 <div id="envoyer">
@@ -308,6 +334,9 @@
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="js/jquery.localScroll.js"></script>
     <script src="js/jquery.scrollTo.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/burger.js"></script>
     <!-- wow.js -->
     <script src="js/wow.min.js"></script>
     <script>
@@ -322,9 +351,13 @@
         });
         $(window).scroll(function () {
             if ($(document).scrollTop() > $("header").height() - 50) {
-                $('nav').addClass('nav2');
+                $('header div nav').addClass('nav2');
+                $("#trigger-overlay").removeClass('transparent');
+                $("#trigger-overlay").addClass('blue');
             } else {
-                $('nav').removeClass('nav2');
+                $('header div nav').removeClass('nav2');
+                $("#trigger-overlay").removeClass('blue');
+                $("#trigger-overlay").addClass('transparent');
             }
         });
     </script>

@@ -98,7 +98,7 @@ body {
     left: 0px;
     position: fixed;
     width: 100%;
-    background: rgba(122, 162, 214, 0.5);
+    background: rgba(122, 162, 214, 0.6);
 
     ul {
         list-style: none;
@@ -119,6 +119,122 @@ body {
             font-weight: bold;
         }
     }
+}
+
+// Navigation Mobile //////////////////////////
+.navMobile {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    text-align: right;
+}
+
+#trigger-overlay {
+    border: none;
+    color: white;
+    border-radius: 5px;
+    margin: 10px 10px 0 0;
+    padding-top: 3px;
+    padding-bottom: 3px;
+
+    i {
+        font-size: 40px;
+    }
+}
+
+.blue {
+    background: rgba(122, 162, 214, 0.6);
+}
+
+.transparent {
+    background-color: transparent;
+}
+
+.overlay {
+    z-index: 99;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(122, 162, 214, 0.6);
+}
+
+.overlay .overlay-close {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    overflow: hidden;
+    border: none;
+    background: url(../images/cross.png) no-repeat center center;
+    text-indent: 200%;
+    color: transparent;
+    outline: none;
+    z-index: 100;
+}
+
+.overlay nav {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    height: 60%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.overlay ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+    height: 100%;
+    position: relative;
+}
+
+.overlay ul li {
+    display: block;
+    height: 20%;
+    height: calc(100% / 5);
+    min-height: 54px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.overlay ul li a {
+    font-size: 3em;
+    display: block;
+    font-family: $font-family-2;
+    color: $color-1;
+    text-decoration: none;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.overlay ul li a:hover,
+.overlay ul li a:focus {
+    font-weight: bold;
+}
+
+/////////////////////////////////////
+
+/* Effects */
+.overlay-slidedown {
+    visibility: hidden;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    -webkit-transition: -webkit-transform 0.4s ease-in-out, visibility 0s 0.4s;
+    transition: transform 0.4s ease-in-out, visibility 0s 0.4s;
+}
+
+.overlay-slidedown.open {
+    visibility: visible;
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+    -webkit-transition: -webkit-transform 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out;
 }
 
 .arrow {
@@ -200,27 +316,28 @@ body {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-    }
 
-    #moi {
-        padding-top: 20px;
+        #moi {
+            padding-top: 20px;
 
-        img {
-            border-radius: 50%;
-            width: 250px;
-            height: auto;
-            padding: 25px 0 25px 0;
+            img {
+                border-radius: 50%;
+                width: 250px;
+                height: auto;
+                padding: 25px 0 25px 0;
+            }
+        }
+
+        #logo {
+            padding-top: 20px;
+
+            img {
+                width: 300px;
+                height: 300px;
+            }
         }
     }
 
-    #logo {
-        padding-top: 20px;
-
-        img {
-            width: 300px;
-            height: 300px;
-        }
-    }
 
     #cv {
         text-align: center;
@@ -269,6 +386,7 @@ body {
     #competences {
         padding-top: 50px;
         display: flex;
+        flex-wrap: wrap;
 
         p {
             text-align: center;
@@ -422,6 +540,7 @@ body {
         margin-top: 30px;
         display: flex;
         justify-content: space-evenly;
+        flex-wrap: wrap;
 
         #infos {
             padding-top: 9%;
@@ -574,6 +693,15 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+    .navMobile {
+        display: initial;
+    }
+
+    .nav,
+    .nav2 {
+        display: none;
+    }
+
     #canvas {
         .canvas-content {
             h1 {
@@ -586,9 +714,96 @@ footer {
         }
     }
 
+    #z2 {
+        p {
+            width: 80%;
+            margin: 0 10% 0 10%;
+        }
+    }
+
     #z4 {
         .travail {
             width: 100%;
         }
+    }
+
+    #z5 {
+        #contact {
+
+            #infos,
+            #formulaire {
+                width: 80%;
+                padding-bottom: 5%;
+                padding-top: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #canvas {
+        .canvas-content {
+
+            h1,
+            h2 {
+                font-size: 4em;
+            }
+
+            h2 {
+                margin-top: 0.5em;
+            }
+        }
+    }
+
+    #z2 {
+        #me {
+            #moi {
+                padding-top: 20px;
+                width: 45%;
+
+                img {
+                    border-radius: 50%;
+                    width: 100%;
+                    padding: 0;
+                }
+            }
+
+            #logo {
+                padding-top: 20px;
+                width: 45%;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+
+        p {
+            width: 90%;
+            margin: 0 5% 0 5%;
+        }
+    }
+
+    #z3 {
+        #competences {
+            padding-top: 25px;
+
+            .skill {
+                width: 100%;
+                padding-bottom: 25px;
+            }
+        }
+    }
+}
+
+@media screen and (max-height: 30.5em) {
+    .overlay nav {
+        height: 70%;
+        font-size: 34px;
+    }
+
+    .overlay ul li {
+        min-height: 34px;
     }
 }
