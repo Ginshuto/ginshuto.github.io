@@ -270,18 +270,23 @@ body {
         width: 100%;
 
         h1 {
-            font-size: 9.4em;
             text-align: center;
-            margin: 0;
-            font-weight: 700;
+            display: flex;
+            flex-direction: column;
         }
 
-        h2 {
+        .titleUn {
+            font-size: 9.4em;
+            text-align: center;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .titleDeux {
             font-size: 4.7em;
             font-weight: 400;
-            margin-top: 1em;
-            margin-bottom: 0;
             text-align: center;
+            margin-top: 1em;
         }
     }
 }
@@ -705,11 +710,11 @@ footer {
 
     #canvas {
         .canvas-content {
-            h1 {
+            .titleUn {
                 font-size: 7.4em;
             }
 
-            h2 {
+            .titleDeux {
                 font-size: 3.7em;
             }
         }
@@ -740,23 +745,27 @@ footer {
         }
     }
 }
-@media screen and (min-width: 1850px){
-    .nav, .nav2{
-        a{
+
+@media screen and (min-width: 1850px) {
+
+    .nav,
+    .nav2 {
+        a {
             font-size: 30px;
         }
     }
 }
+
 @media screen and (max-width: 500px) {
     #canvas {
         .canvas-content {
 
-            h1,
-            h2 {
+            .titleUn,
+            .titleDeux {
                 font-size: 4em;
             }
 
-            h2 {
+            .titeDeux {
                 margin-top: 0.5em;
             }
         }
