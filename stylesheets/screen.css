@@ -845,24 +845,30 @@ footer #footer li a i:before {
     font-size: 2em;
   }
 
-  /* line 866, ../sass/screen.scss */
+  /* line 867, ../sass/screen.scss */
   footer #footer {
     padding: 0;
   }
-  /* line 868, ../sass/screen.scss */
+  /* line 870, ../sass/screen.scss */
   footer #footer li {
     margin: 5px;
     margin-right: 0;
   }
 }
+@media screen and (max-width: 321px), screen and (max-height: 490px) {
+  /* line 882, ../sass/screen.scss */
+  .overlay nav ul li a {
+    font-size: 1em;
+  }
+}
 @media screen and (max-height: 30.5em) {
-  /* line 877, ../sass/screen.scss */
+  /* line 891, ../sass/screen.scss */
   .overlay nav {
     height: 70%;
     font-size: 34px;
   }
 
-  /* line 882, ../sass/screen.scss */
+  /* line 896, ../sass/screen.scss */
   .overlay ul li {
     min-height: 34px;
   }
