@@ -757,84 +757,90 @@ footer #footer li a i:before {
     padding-top: 0;
   }
 }
+@media screen and (min-width: 1850px) {
+  /* line 745, ../sass/screen.scss */
+  .nav a, .nav2 a {
+    font-size: 30px;
+  }
+}
 @media screen and (max-width: 500px) {
-  /* line 748, ../sass/screen.scss */
+  /* line 754, ../sass/screen.scss */
   #canvas .canvas-content h1,
   #canvas .canvas-content h2 {
     font-size: 4em;
   }
-  /* line 753, ../sass/screen.scss */
+  /* line 759, ../sass/screen.scss */
   #canvas .canvas-content h2 {
     margin-top: 0.5em;
   }
 
-  /* line 759, ../sass/screen.scss */
+  /* line 765, ../sass/screen.scss */
   .arrow {
     height: 25px;
   }
 
-  /* line 765, ../sass/screen.scss */
+  /* line 771, ../sass/screen.scss */
   #z2 #me #moi {
     padding-top: 20px;
     width: 45%;
   }
-  /* line 769, ../sass/screen.scss */
+  /* line 775, ../sass/screen.scss */
   #z2 #me #moi img {
     border-radius: 50%;
     width: 100%;
     padding: 0;
   }
-  /* line 776, ../sass/screen.scss */
+  /* line 782, ../sass/screen.scss */
   #z2 #me #logo {
     padding-top: 20px;
     width: 45%;
   }
-  /* line 780, ../sass/screen.scss */
+  /* line 786, ../sass/screen.scss */
   #z2 #me #logo img {
     width: 100%;
     height: auto;
   }
-  /* line 787, ../sass/screen.scss */
+  /* line 793, ../sass/screen.scss */
   #z2 p {
     width: 90%;
     margin: 0 5% 0 5%;
   }
 
-  /* line 794, ../sass/screen.scss */
+  /* line 800, ../sass/screen.scss */
   #z3 #competences {
     padding-top: 25px;
   }
-  /* line 797, ../sass/screen.scss */
+  /* line 803, ../sass/screen.scss */
   #z3 #competences .skill {
     width: 100%;
     padding-bottom: 25px;
   }
 }
 @media screen and (max-width: 376px) {
-  /* line 810, ../sass/screen.scss */
+  /* line 816, ../sass/screen.scss */
   .overlay nav ul li a {
     font-size: 2.5em;
   }
 
-  /* line 821, ../sass/screen.scss */
+  /* line 827, ../sass/screen.scss */
   #z5 #contact #infos address {
     font-size: 20px;
   }
 
-  /* line 830, ../sass/screen.scss */
+  /* line 836, ../sass/screen.scss */
   footer #footer li {
     margin: 10px;
     margin-right: 0;
   }
 }
 @media screen and (max-height: 30.5em) {
-  /* line 839, ../sass/screen.scss */
+  /* line 845, ../sass/screen.scss */
   .overlay nav {
     height: 70%;
     font-size: 34px;
   }
 
-  /* line 844, ../sass/screen.scss */
+  /* line 850, ../sass/screen.scss */
   .overlay ul li {
     min-height: 34px;
   }
