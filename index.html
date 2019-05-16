@@ -289,14 +289,15 @@
                     </p>
                 </address>
             </div>
-            <form id="formulaire" class="wow fadeInRight" data-wow-duration="1.5s">
+            <form action="https://formspree.io/martinmatthieupro@gmail.com" id="formulaire" method="POST"
+                name="formulaire" class="wow fadeInRight" data-wow-duration="1.5s">
                 <div id="name">
-                    <input type="text" name="name" placeholder="Votre Nom" class="name" required>
-                    <input type="text" name="surname" placeholder="Votre Prénom" class="surname" required>
+                    <input type="text" name="name" placeholder="Votre Nom" required>
+                    <input type="text" name="surname" placeholder="Votre Prénom" required>
                 </div>
                 <div id="mailObject">
-                    <input type="email" name="email" class="mail" placeholder="Votre adresse mail" required>
-                    <input type="text" name="subject" class="objet" placeholder="Objet du message" required>
+                    <input type="email" name="email" placeholder="Votre adresse mail" required>
+                    <input type="text" name="subject" placeholder="Objet du message" required>
                 </div>
                 <textarea name="message" id="message" placeholder="Votre message..." required></textarea>
                 <div id="envoyer">
@@ -336,9 +337,8 @@
         </ul>
     </footer>
     <!-- Scripts JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/ajax.js"></script>
-    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="js/jquery.localScroll.js"></script>
     <script src="js/jquery.scrollTo.js"></script>
     <!-- Menu Burger -->
@@ -378,7 +378,6 @@
     <script src="js/3d-lines-animation.js"></script>
     <!-- Animated background color -->
     <script src="js/color.js"></script>
-    <!-- Formspree Ajax -->
 </body>
 
 </html>
