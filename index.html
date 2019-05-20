@@ -311,7 +311,7 @@
                 </address>
             </div>
             <form action="https://formspree.io/martinmatthieupro@gmail.com" id="formulaire" method="POST"
-                name="formulaire" class="wow fadeInRight" data-wow-duration="1.5s">
+                name="formulaire" class="wow fadeInRight" data-wow-duration="1.5s" onsubmit="formulaire()">
                 <div id="name">
                     <input type="text" name="name" placeholder="Votre Nom" required>
                     <input type="text" name="surname" placeholder="Votre Prénom" required>
@@ -394,6 +394,18 @@
     <script src="js/3d-lines-animation.js"></script>
     <!-- Animated background color -->
     <script src="js/color.js"></script>
+    <script>
+        function formulaire() {
+            dataLayer.push({
+                'event': 'portfolioEvent',
+                'eventCategory': 'Utilisateur',
+                'eventAction': 'Formulaire de Contact',
+                'eventLabel': 'Message Envoyé',
+                'eventValue': '1'
+            });
+        }
+    </script>
+
 </body>
 
 </html>
