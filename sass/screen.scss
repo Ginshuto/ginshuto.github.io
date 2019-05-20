@@ -566,6 +566,7 @@ body {
                     text-decoration: none;
                     font-style: italic;
                     color: $color-1;
+                    font-weight: bold;
 
                     &:hover {
                         font-weight: bold;
@@ -749,7 +750,7 @@ footer {
 
                 address {
                     a {
-                        animation: tilt 2s infinite;
+                        // animation: tilt 2s infinite;
                     }
                 }
             }
