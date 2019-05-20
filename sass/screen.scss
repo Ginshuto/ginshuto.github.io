@@ -522,6 +522,11 @@ body {
 
 
 // Me Contacter
+@keyframes tilt {
+    50% {
+        font-weight: bold;
+    }
+}
 
 #z5 {
     padding-top: 5%;
@@ -741,6 +746,12 @@ footer {
                 width: 90%;
                 padding-bottom: 5%;
                 padding-top: 0;
+
+                address {
+                    a {
+                        animation: tilt 2s infinite;
+                    }
+                }
             }
         }
     }
@@ -874,7 +885,9 @@ footer {
         }
     }
 }
-@media screen and (max-width: 321px), screen and (max-height: 490px){
+
+@media screen and (max-width: 321px),
+screen and (max-height: 490px) {
     .overlay {
         nav {
             ul {
@@ -885,8 +898,9 @@ footer {
                 }
             }
         }
-    }   
+    }
 }
+
 @media screen and (max-height: 30.5em) {
     .overlay nav {
         height: 70%;

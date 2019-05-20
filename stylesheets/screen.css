@@ -553,18 +553,23 @@ body h3 {
   font-weight: bold;
 }
 
-/* line 526, ../sass/screen.scss */
+@keyframes tilt {
+  50% {
+    font-weight: bold;
+  }
+}
+/* line 531, ../sass/screen.scss */
 #z5 {
   padding-top: 5%;
   background-color: #7aa2d6;
 }
-/* line 530, ../sass/screen.scss */
+/* line 535, ../sass/screen.scss */
 #z5 h2 {
   text-align: center;
   font-size: 30px;
   color: #ffffff;
 }
-/* line 536, ../sass/screen.scss */
+/* line 541, ../sass/screen.scss */
 #z5 p {
   text-align: center;
   padding-top: 25px;
@@ -573,39 +578,39 @@ body h3 {
   color: #ffffff;
   font-family: "Lato", sans-serif;
 }
-/* line 545, ../sass/screen.scss */
+/* line 550, ../sass/screen.scss */
 #z5 #contact {
   margin-top: 30px;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-/* line 551, ../sass/screen.scss */
+/* line 556, ../sass/screen.scss */
 #z5 #contact #infos {
   padding-top: 9%;
   text-align: center;
   width: 40%;
 }
-/* line 556, ../sass/screen.scss */
+/* line 561, ../sass/screen.scss */
 #z5 #contact #infos address {
   font-family: "Lato", sans-serif;
   font-size: 25px;
 }
-/* line 560, ../sass/screen.scss */
+/* line 565, ../sass/screen.scss */
 #z5 #contact #infos address a {
   text-decoration: none;
   font-style: italic;
   color: #ffffff;
 }
-/* line 565, ../sass/screen.scss */
+/* line 570, ../sass/screen.scss */
 #z5 #contact #infos address a:hover {
   font-weight: bold;
 }
-/* line 570, ../sass/screen.scss */
+/* line 575, ../sass/screen.scss */
 #z5 #contact #infos address i {
   margin-right: 10px;
 }
-/* line 576, ../sass/screen.scss */
+/* line 581, ../sass/screen.scss */
 #z5 #contact #formulaire {
   width: 40%;
   display: flex;
@@ -613,12 +618,12 @@ body h3 {
   text-align: center;
   color: #7aa2d6;
 }
-/* line 583, ../sass/screen.scss */
+/* line 588, ../sass/screen.scss */
 #z5 #contact #formulaire #name,
 #z5 #contact #formulaire #mailObject {
   display: flex;
 }
-/* line 588, ../sass/screen.scss */
+/* line 593, ../sass/screen.scss */
 #z5 #contact #formulaire input[type="text"],
 #z5 #contact #formulaire input[type="email"] {
   padding: 14px 15px;
@@ -629,7 +634,7 @@ body h3 {
   font-family: "Lato", sans-serif;
   margin: 10px;
 }
-/* line 599, ../sass/screen.scss */
+/* line 604, ../sass/screen.scss */
 #z5 #contact #formulaire textarea {
   margin-top: 10px;
   border: none;
@@ -639,17 +644,17 @@ body h3 {
   background: white;
   font-family: "Lato", sans-serif;
 }
-/* line 609, ../sass/screen.scss */
+/* line 614, ../sass/screen.scss */
 #z5 #contact #formulaire textarea[id="message"] {
   color: #7aa2d6;
 }
-/* line 613, ../sass/screen.scss */
+/* line 618, ../sass/screen.scss */
 #z5 #contact #formulaire ::placeholder {
   color: #7aa2d6;
   font-family: "Lato", sans-serif;
   font-weight: bold;
 }
-/* line 619, ../sass/screen.scss */
+/* line 624, ../sass/screen.scss */
 #z5 #contact #formulaire input[type="submit"] {
   margin-top: 20px;
   font-family: "Lato", sans-serif;
@@ -661,23 +666,23 @@ body h3 {
   color: #7aa2d6;
   font-size: 18px;
 }
-/* line 630, ../sass/screen.scss */
+/* line 635, ../sass/screen.scss */
 #z5 #contact #formulaire input[type="submit"]:hover {
   font-weight: bold;
   cursor: pointer;
 }
-/* line 638, ../sass/screen.scss */
+/* line 643, ../sass/screen.scss */
 #z5 #upArrow {
   text-align: center;
   padding-bottom: 2%;
 }
-/* line 642, ../sass/screen.scss */
+/* line 647, ../sass/screen.scss */
 #z5 #upArrow .up {
   margin-top: 30px;
   height: 25px;
 }
 
-/* line 655, ../sass/screen.scss */
+/* line 660, ../sass/screen.scss */
 footer {
   font-family: "Lato", sans-serif;
   background-color: #ffffff;
@@ -688,23 +693,23 @@ footer {
   font-size: 17px;
   letter-spacing: 1px;
 }
-/* line 665, ../sass/screen.scss */
+/* line 670, ../sass/screen.scss */
 footer #footer {
   padding: 10px;
   list-style: none;
 }
-/* line 669, ../sass/screen.scss */
+/* line 674, ../sass/screen.scss */
 footer #footer .twitter,
 footer #footer .github {
   margin-left: 10px;
 }
-/* line 674, ../sass/screen.scss */
+/* line 679, ../sass/screen.scss */
 footer #footer li {
   display: inline-block;
   margin: 15px;
   margin-right: 0;
 }
-/* line 679, ../sass/screen.scss */
+/* line 684, ../sass/screen.scss */
 footer #footer li a {
   text-decoration: none;
   color: #7aa2d6;
@@ -712,163 +717,168 @@ footer #footer li a {
   display: inline-block;
   transition: all ease-in-out 0.5s;
 }
-/* line 686, ../sass/screen.scss */
+/* line 691, ../sass/screen.scss */
 footer #footer li a:hover {
   font-weight: bold;
   opacity: 0.8;
 }
-/* line 692, ../sass/screen.scss */
+/* line 697, ../sass/screen.scss */
 footer #footer li a i:before {
   font-size: 23px;
 }
 
 @media screen and (max-width: 768px) {
-  /* line 702, ../sass/screen.scss */
+  /* line 707, ../sass/screen.scss */
   .navMobile {
     display: initial;
   }
 
-  /* line 706, ../sass/screen.scss */
+  /* line 711, ../sass/screen.scss */
   .nav,
   .nav2 {
     display: none;
   }
 
-  /* line 713, ../sass/screen.scss */
+  /* line 718, ../sass/screen.scss */
   #canvas .canvas-content .titleUn {
     font-size: 7.4em;
   }
-  /* line 717, ../sass/screen.scss */
+  /* line 722, ../sass/screen.scss */
   #canvas .canvas-content .titleDeux {
     font-size: 3.7em;
   }
 
-  /* line 724, ../sass/screen.scss */
+  /* line 729, ../sass/screen.scss */
   #z2 p {
     width: 80%;
     margin: 0 10% 0 10%;
   }
 
-  /* line 731, ../sass/screen.scss */
+  /* line 736, ../sass/screen.scss */
   #z4 .travail {
     width: 100%;
   }
 
-  /* line 739, ../sass/screen.scss */
+  /* line 744, ../sass/screen.scss */
   #z5 #contact #infos,
   #z5 #contact #formulaire {
     width: 90%;
     padding-bottom: 5%;
     padding-top: 0;
   }
+  /* line 751, ../sass/screen.scss */
+  #z5 #contact #infos address a,
+  #z5 #contact #formulaire address a {
+    animation: tilt 2s infinite;
+  }
 }
 @media screen and (min-width: 1850px) {
-  /* line 753, ../sass/screen.scss */
+  /* line 764, ../sass/screen.scss */
   .nav a,
   .nav2 a {
     font-size: 30px;
   }
 }
 @media screen and (max-width: 500px) {
-  /* line 763, ../sass/screen.scss */
+  /* line 774, ../sass/screen.scss */
   #canvas .canvas-content .titleUn,
   #canvas .canvas-content .titleDeux {
     font-size: 4em;
   }
-  /* line 768, ../sass/screen.scss */
+  /* line 779, ../sass/screen.scss */
   #canvas .canvas-content .titeDeux {
     margin-top: 0.5em;
   }
 
-  /* line 774, ../sass/screen.scss */
+  /* line 785, ../sass/screen.scss */
   .arrow {
     height: 25px;
   }
 
-  /* line 780, ../sass/screen.scss */
+  /* line 791, ../sass/screen.scss */
   #z2 #me #moi {
     padding-top: 20px;
     width: 45%;
   }
-  /* line 784, ../sass/screen.scss */
+  /* line 795, ../sass/screen.scss */
   #z2 #me #moi img {
     border-radius: 50%;
     width: 100%;
     padding: 0;
   }
-  /* line 791, ../sass/screen.scss */
+  /* line 802, ../sass/screen.scss */
   #z2 #me #logo {
     padding-top: 20px;
     width: 45%;
   }
-  /* line 795, ../sass/screen.scss */
+  /* line 806, ../sass/screen.scss */
   #z2 #me #logo img {
     width: 100%;
     height: auto;
   }
-  /* line 802, ../sass/screen.scss */
+  /* line 813, ../sass/screen.scss */
   #z2 p {
     width: 90%;
     margin: 0 5% 0 5%;
   }
 
-  /* line 809, ../sass/screen.scss */
+  /* line 820, ../sass/screen.scss */
   #z3 #competences {
     padding-top: 25px;
   }
-  /* line 812, ../sass/screen.scss */
+  /* line 823, ../sass/screen.scss */
   #z3 #competences .skill {
     width: 100%;
     padding-bottom: 25px;
   }
 }
 @media screen and (max-width: 376px) {
-  /* line 825, ../sass/screen.scss */
+  /* line 836, ../sass/screen.scss */
   .overlay nav ul li a {
     font-size: 2.5em;
   }
 
-  /* line 836, ../sass/screen.scss */
+  /* line 847, ../sass/screen.scss */
   #z5 #contact #infos address {
     font-size: 20px;
   }
 
-  /* line 845, ../sass/screen.scss */
+  /* line 856, ../sass/screen.scss */
   footer #footer li {
     margin: 10px;
     margin-right: 0;
   }
 }
 @media screen and (max-width: 321px) {
-  /* line 858, ../sass/screen.scss */
+  /* line 869, ../sass/screen.scss */
   .overlay nav ul li a {
     font-size: 2em;
   }
 
-  /* line 867, ../sass/screen.scss */
+  /* line 878, ../sass/screen.scss */
   footer #footer {
     padding: 0;
   }
-  /* line 870, ../sass/screen.scss */
+  /* line 881, ../sass/screen.scss */
   footer #footer li {
     margin: 5px;
     margin-right: 0;
   }
 }
 @media screen and (max-width: 321px), screen and (max-height: 490px) {
-  /* line 882, ../sass/screen.scss */
+  /* line 895, ../sass/screen.scss */
   .overlay nav ul li a {
     font-size: 1em;
   }
 }
 @media screen and (max-height: 30.5em) {
-  /* line 891, ../sass/screen.scss */
+  /* line 905, ../sass/screen.scss */
   .overlay nav {
     height: 70%;
     font-size: 34px;
   }
 
-  /* line 896, ../sass/screen.scss */
+  /* line 910, ../sass/screen.scss */
   .overlay ul li {
     min-height: 34px;
   }
