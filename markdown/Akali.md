@@ -1,15 +1,25 @@
-# Comparaison Akali à la sortie du Rework (8.15) => Aujourd'hui (10.7)
+﻿# Comparaison Akali à la sortie du Rework (8.15) => Aujourd'hui (10.7)
 > Comparaison : 8.15 => 10.7
+
+## Statistiques
+
+**Comparaison** :
+
+* _PV de base_ : **550** => **575** ;
+* _Régénération des PV de base_ : **3.5** => **8** ;
+* _Résistance Magique de base_ : **32.1** => **37** ;
+* _Croissance des PV par niveau_ : **85** => **95** ;
+
 ## Passif : Marque d'Assassin
 
 **Comparaison :**
 * _Cercle autour de la cible_ : **5** secondes => **4** secondes ;
-* _Bonus de vitesse de déplacement_ : **35 / 40 / 45 / 50%** (en fonction du niveau) pendant  **1 / 2 / 3** (en fonction du niveau) secondes => **40 / 50 / 60 / 70%** (en fonction du niveau) pendant  **2** secondes ;
+* _Bonus de vitesse de déplacement_ : **35 / 40 / 45 / 50%** (au niveau 1/ 6 / 11 / 16) pendant  **1 / 2 / 3** (au niveau 1/ 6 / 11) secondes => **40 / 50 / 60 / 70%** (au niveau 1/ 6 / 11 / 16) pendant  **2** secondes ;
 * _Sortie de cercle_ :  Même bonus de vitesse que lorsqu'elle se dirige vers les bords du cercle ;
-* _Auto-Attaque améliorée_ : 39 − 180 (en fonction du niveau) (+ 90%  AD **bonus**) (+ 70% AP) [![Magic damage](https://vignette.wikia.nocookie.net/leagueoflegends/images/7/78/Magic_damage.png/revision/latest/scale-to-width-down/20?cb=20190705135718)](https://leagueoflegends.fandom.com/wiki/Magic_damage) [dégâts magiques **bonus**](https://leagueoflegends.fandom.com/wiki/Magic_damage) et restaure 10 / 15 / 20 / 25 / 30 (en fonction du niveau) points d'énergie => 39 − 180 (en fonction du niveau) (+ 60%  AD **bonus**) (+ 50% AP) [![Magic damage](https://vignette.wikia.nocookie.net/leagueoflegends/images/7/78/Magic_damage.png/revision/latest/scale-to-width-down/20?cb=20190705135718)](https://leagueoflegends.fandom.com/wiki/Magic_damage) [dégâts magiques **bonus**](https://leagueoflegends.fandom.com/wiki/Magic_damage) et restaure 10 / 15 / 20 (en fonction du niveau) points d'énergie.
+* _Auto-Attaque améliorée_ : **39 − 180 (en fonction du niveau) (+ 90%  AD bonus) (+ 70% AP)** [![Magic damage](https://vignette.wikia.nocookie.net/leagueoflegends/images/7/78/Magic_damage.png/revision/latest/scale-to-width-down/20?cb=20190705135718)](https://leagueoflegends.fandom.com/wiki/Magic_damage) [dégâts magiques **bonus**](https://leagueoflegends.fandom.com/wiki/Magic_damage) et restaure **10 / 15 / 20 / 25 / 30** (au niveau 1/ 6 / 11 / 16) points d'énergie => **39 − 180 (en fonction du niveau) (+ 60%  AD bonus) (+ 50% AP)** [![Magic damage](https://vignette.wikia.nocookie.net/leagueoflegends/images/7/78/Magic_damage.png/revision/latest/scale-to-width-down/20?cb=20190705135718)](https://leagueoflegends.fandom.com/wiki/Magic_damage) [dégâts magiques **bonus**](https://leagueoflegends.fandom.com/wiki/Magic_damage) et restaure **10 / 15 / 20** (au niveau 1/ 8 / 13) points d'énergie.
 
 > **Conclusion :**
-> **-30% d'AD Bonus**, - **20% d'AP**, plus de vitesse de déplacement, moins d'énergie rendue, durée du cercle plus courte.
+> **-30% d'AD Bonus**, - **20% d'AP**, **plus de vitesse de déplacement**, moins d'énergie rendue, durée du cercle plus courte.
 
 ## A : Vague de Kunais
 
@@ -35,7 +45,7 @@
 * _Temps pour redevenir Invisible dans le Linceul_ : **0.65** secondes => **1 − 0.625** (en fonction du temps de la partie) secondes, devient **Obscur** pendant un très bref délai avant de devenir **Invisible** ;
 
 > **Conclusion :**
-> Délai de récupération plus élevé, durée du Linceul diminué fortement, Bonus de vitesse au lancement et non dans le Linceul, Invisibilité moins forte, plus de temps pour redevenir invisible en début de partie. 
+> **Délai de récupération plus élevé**, durée du Linceul diminué fortement, **Bonus de vitesse au lancement et non dans le Linceul**, Invisibilité moins forte, plus de temps pour redevenir invisible en début de partie. 
 
 ## E : Lancer Acrobatique
 
