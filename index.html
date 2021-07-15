@@ -1,404 +1,336 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-    <script>
-        var dataLayer = [{}];
-    </script>
-    <!-- Google Tag Manager -->
-    <script>
-        (function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-T2QGDB7');
-    </script>
-    <!-- End Google Tag Manager -->
-    <title>Matthieu Martin - Développeur Front-End</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <title>Matthieu MARTIN - Développeur Front-End</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="google-site-verification" content="Fklfny_zYZYp1Dr55kaMOQisYpMFcp47-esif1f_pnM" />
     <!-- SEO -->
-    <meta name="keywords"
-        content="Matthieu Martin, Mathieu Martin, Matieu Martin, Mattieu Martin, Portfolio, intégrateur web, Troyes, créer son site, Développeur Front-End" />
-    <meta name="description"
-        content="Portfolio de Matthieu Martin. Découvrez qui je suis, les différents travaux effectués durant mon DUT MMI, ainsi que mes travaux personnels." />
-    <meta name="Subject" content="Portfolio">
-    <meta name="Copyright" content="Matthieu Martin">
-    <meta name="Author" content="Matthieu Martin">
-    <meta name="Publisher" content="Matthieu Martin">
-    <meta name="Robots" content="all">
-    <meta name="Distribution" content="global">
+    <meta
+      name="keywords"
+      content="Matthieu MARTIN, Mathieu MARTIN, Matieu MARTIN, Mattieu MARTIN, Portfolio, intégrateur web, Troyes, créer son site, Développeur Front-End"
+    />
+    <meta
+      name="description"
+      content="Portfolio de Matthieu MARTIN. Découvrez qui je suis, les différents travaux effectués durant mon DUT MMI, ainsi que mes travaux personnels."
+    />
+    <meta name="Subject" content="Portfolio" />
+    <meta name="Copyright" content="Matthieu MARTIN" />
+    <meta name="Author" content="Matthieu MARTIN" />
+    <meta name="Publisher" content="Matthieu MARTIN" />
+    <meta name="Robots" content="all" />
+    <meta name="Distribution" content="global" />
     <!-- Balises Meta Facebook / Linkedin / Twitter -->
-    <meta property="og:title" content="Matthieu MARTIN - Développeur Front-End">
-    <meta property="og:description" content="Portfolio / CV / Réalisations de Matthieu Martin, Développeur Front-End">
-    <meta property="og:image" content="images/logo.webp">
-    <meta property="og:url" content="index.html">
-    <meta name="twitter:title" content="Matthieu MARTIN - Développeur Front-End">
-    <meta name="twitter:description" content="Portfolio / CV / Réalisations de Matthieu Martin, Développeur Front-End">
-    <meta name="twitter:image" content="images/logo.webp">
-    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:title" content="Matthieu MARTIN - Développeur Front-End" />
+    <meta property="og:description" content="Portfolio de Matthieu MARTIN, Développeur Front-End" />
+    <meta property="og:image" content="images/logo.png" />
+    <meta property="og:url" content="index.html" />
+    <meta name="twitter:title" content="Matthieu MARTIN - Développeur Front-End" />
+    <meta name="twitter:description" content="Portfolio de Matthieu MARTIN, Développeur Front-End" />
+    <meta name="twitter:image" content="images/logo.png" />
+    <meta name="twitter:card" content="summary_large_image" />
     <!-- Favicon -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <!-- CSS, Animate.css et Font Awesome -->
-    <link href="stylesheets/screen.css" media="screen" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <!-- <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css"> -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-</head>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <!-- Liens CSS pour wow.js et Font Awesome -->
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/splide-skyblue.min.css" />
+    <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+    <!-- Style de la page -->
+    <link href="css/main.min.css" rel="stylesheet" type="text/css" />
+    <!-- Liens vers les polices Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
+  </head>
 
-<body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T2QGDB7" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe>
-    </noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    <!-- Menu Burger -->
-    <div class="overlay overlay-slidedown">
-        <button type="button" class="overlay-close">Close</button>
+  <body>
+    <!--Header : Canvas et barre de navigation -->
+    <header id="Accueil" class="section--1">
+      <div class="navigation">
         <nav>
-            <ul>
-                <li>
-                    <a href="#canvas" class="un">Accueil</a>
-                </li>
-                <li>
-                    <a href="#z2" class="deux">Qui suis-je ?</a>
-                </li>
-                <li>
-                    <a href="#z3" class="trois">Mes Compétences</a>
-                </li>
-                <li>
-                    <a href="#z4" class="quatre">Mes Réalisations</a>
-                </li>
-                <li>
-                    <a href="#z5" class="cinq">Me Contacter</a>
-                </li>
-            </ul>
+          <ul class="navigation__list">
+            <li class="navigation__list-item">
+              <a class="navigation__link active" href="#Accueil">Accueil</a>
+            </li>
+            <li class="navigation__list-item">
+              <a class="navigation__link" href="#Qui-suis-je">Qui suis-je ?</a>
+            </li>
+            <li class="navigation__list-item">
+              <a class="navigation__link" href="#Competences">Mes compétences</a>
+            </li>
+            <li class="navigation__list-item">
+              <a class="navigation__link" href="#Realisations">Mes réalisations</a>
+            </li>
+            <li class="navigation__list-item">
+              <a class="navigation__link" href="#Contact">Me contacter</a>
+            </li>
+          </ul>
         </nav>
-    </div>
-    <!--Header : Canvas et Navbar -->
-    <header tabindex="0">
-        <div class="nav">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#canvas">Accueil</a>
-                    </li>
-                    <li>
-                        <a href="#z2">Qui suis-je ?</a>
-                    </li>
-                    <li>
-                        <a href="#z3">Mes Compétences</a>
-                    </li>
-                    <li>
-                        <a href="#z4">Mes Réalisations</a>
-                    </li>
-                    <li>
-                        <a href="#z5">Me Contacter</a>
-                    </li>
-                </ul>
-            </nav>
+      </div>
+      <!-- navMobile changeable -->
+      <div class="navigation--mobile">
+        <button id="trigger-overlay" type="button">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+      <div id="canvas" class="canvas">
+        <div class="canvas__content">
+          <h1>
+            <span class="canvas__title canvas__title--first-span fadeInDown" data-wow-duration="3s">Matthieu MARTIN</span>
+            <span class="canvas__title canvas__title--second-span fadeInUp" data-wow-duration="3s" data-wow-delay=".5s"> Développeur Front-End </span>
+          </h1>
         </div>
-        <div class="navMobile">
-            <button id="trigger-overlay" class="transparent" type="button"><i class="fas fa-bars"></i></button>
-        </div>
-        <section id="canvas" class="gradient">
-            <div class="canvas-content">
-                <h1 class="wowDeux"> <span class="titleUn wowDeux fadeInDown" data-wow-duration="3s">Matthieu
-                        MARTIN</span>
-                    <span class="titleDeux wowDeux fadeInUp" data-wow-duration="3s" data-wow-delay=".5s">Développeur
-                        Front-End</span>
-                </h1>
-                <!-- <h2 class="wowDeux fadeInUp" data-wow-duration="3s" data-wow-delay=".4s">Développeur Front-End</h2> -->
-            </div>
-            <a href="#z2"><img class="arrow bounce" src="images/down.webp" alt="down arrow"></a>
-        </section>
+        <a href="#Qui-suis-je"><img class="navigation__arrow--down" role="button" src="images/down.png" alt="Passer à la section Qui suis-je ?" /></a>
+      </div>
     </header>
-    <!-- À Propos -->
-    <div id="z2" tabindex="1">
-        <h2 class="wow fadeInDown" data-wow-duration="1.5s">Qui suis-je ?</h2>
-        <div id="me">
-            <div id="moi" class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay=".4s">
-                <img src="images/photo.webp" alt="Photographie de Matthieu MARTIN, par Laurent MARTIN.">
-            </div>
-            <div id="logo" class="wow fadeInRight" data-wow-duration="1.5s" data-wow-delay=".6s">
-                <img src="images/logo.webp" alt="Logo représentant mes 2 initiales">
-            </div>
-        </div>
-        <p class="wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.8s">
-            Bienvenue sur mon Portfolio !
-            <br><br> Diplômé d'un DUT Métiers du Multimédia et de l'Internet, j'ai acquis une expertise globale dans le
-            domaine du multimédia et de l'internet. <br> Au cours du 4ème semestre, j'ai décidé de me
-            spécialiser dans le Développement Front-End. <br><br>
-            Après mon DUT MMI, J'ai effectué la formation intensive Web & Go de la Coding Academy By Epitech, d'une
-            durée de 5 mois,<br> où j'y ai perfectionné mes compétences en Développement Front-End, <br> et appris à
-            utiliser de nouveaux outils comme React et Angular.
-            <br><br> Admis en mastère Expert Développement Web dans l'école Ynov, je suis à la recherche d'une
-            alternance. Le rythme d'alternance est de 3 jours en entreprise pour 2 jours à l'école. <br><br> Je
-            suis
-            passionné par les Jeux Vidéos ainsi que la culture japonaise.
-        </p>
-        <div id="cv" class="wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1s">
-            <form action="CV.pdf" target="_blank">
-                <button>Télécharger mon CV</button>
-            </form>
-        </div>
-    </div>
-    <!-- Mes Compétences -->
-    <div id="z3" tabindex="2">
-        <h2 class="wow fadeInDown" data-wow-duration="1.5s">Mes Compétences</h2>
-        <section id="competences" class="wow fadeInUp">
-            <div class="skill wow fadeInUp" data-wow-duration="1.5s">
-                <i class="fas fa-code"></i>
-                <h3>Développement Web</h3>
-                <p>Assembler les pages en HTML5 et CSS/SCSS à partir de maquettes graphiques, et intégrer des contenus
-                    textuels, des images, des animations,
-                    des sons, ou encore de la vidéo, et cela en responsive Design.</p>
-            </div>
-            <div class="skill wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".6s">
-                <i class="fab fa-js-square"></i>
-                <h3>Technologies JS</h3>
-                <p>Utilisation des technologies Javascript afin de créer des sites web riches et interactifs, ou bien
-                    des applications mobiles. <br>
-                    Je maîtrise le langage Javascript, Jquery, ainsi que les bases d'Angular, React et React Native.
-                </p>
-            </div>
-            <div class="skill wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".4s">
-                <i class="fas fa-window-restore"></i>
-                <h3>Ergonomie</h3>
-                <p>Conception d'une interface Web ergonomique, accessible et simple d'utilisation pour tous les
-                    internautes, y compris les personnes handicapées.</p>
-            </div>
-        </section>
-    </div>
-    <!-- Mes Travaux -->
-    <div id="z4" tabindex="3">
-        <h2 class="wow fadeInDown" data-wow-duration="1.5s">Mes Réalisations</h2>
-        <h3>Projets de la formation Web & Go</h3>
-        <!-- Web & Go -->
-        <div id="webGo">
-            <div class="travail wow fadeInLeft" data-wow-duration="1.5s">
-                <a href="materialize/batman.html" target="_blank">
-                    <img src="images/materialize.webp" alt="Aperçu du projet sur Materialize">
-                </a>
-                <a href="materialize/batman.html" target="_blank" class="workCaption">Materialize</a>
-                <p>Site E-commerce Batman/Licorne <br> réalisé grâce <a href="https://materializecss.com/"
-                        target="_blank">Materialize</a>.</p>
-            </div>
-            <div class="travail wow fadeInRight" data-wow-duration="1.5s">
-                <a href="gsap/index.html" target="_blank">
-                    <img src="images/gsap.webp" alt="Aperçu du projet sur les animations GSAP">
-                </a>
-                <a href="gsap/index.html" target="_blank" class="workCaption">GSAP</a>
-                <p>Fabrication d'emoji, animé avec <a href="https://greensock.com" target="_blank">GSAP</a>.</p>
-            </div>
-            <div class="travail wow fadeInLeft" data-wow-duration="1.5s">
-                <a href="maquette_sass2/index.html" target="_blank">
-                    <img src="images/sass2.webp" alt="Aperçu du projet sur la maquette SASS #2">
-                </a>
-                <a href="maquette_sass2/index.html" target="_blank" class="workCaption">Maquette SASS/LESS #2</a>
-                <p>2ème site avec feuilles de style en <a href="https://sass-lang.com/" target="_blank">SCSS</a>.</p>
-            </div>
-            <div class="travail wow fadeInRight" data-wow-duration="1.5s">
-                <a href="maquette_sass1/index.html" target="_blank">
-                    <img src="images/sass1.webp" alt="Aperçu du projet sur la maquette SASS #1">
-                </a>
-                <a href="maquette_sass1/index.html" target="_blank" class="workCaption">Maquette SASS/LESS #1</a>
-                <p>1er site avec feuilles de style en <a href="https://sass-lang.com/" target="_blank">SCSS</a>.</p>
-            </div>
-            <div class="travail wow fadeInLeft" data-wow-duration="1.5s">
-                <a href="https://ginshuto.github.io/MySpotify/" target="_blank">
-                    <img src="images/spotify.webp" alt="Aperçu du projet MySpotify sur Angular">
-                </a>
-                <a href="https://ginshuto.github.io/MySpotify/" target="_blank" class="workCaption">MySpotify</a>
-                <p>Projet <a href="https://angular.io" target="_blank">Angular</a> basé sur l'API de <a
-                        href="https://developer.spotify.com/" target="_blank">Spotify</a>. <br> Affiche les playlists de
-                    l'utilisateur connecté, <br> possibilité de créer des playlists, <br> d'afficher ses chansons, d'en
-                    ajouter ou d'en supprimer.</p>
-            </div>
-            <div class="travail wow fadeInRight" data-wow-duration="1.5s">
-                <a href="responsive/index.html" target="_blank">
-                    <img src="images/responsive.webp" alt="Aperçu du projet Maquette Responsive">
-                </a>
-                <a href="responsive/index.html" target="_blank" class="workCaption">Responsive</a>
-                <p>Site d'agence de voyage <a href="https://fr.wikipedia.org/wiki/Site_web_adaptatif"
-                        target="_blank">responsive</a> <br>pour les ordinateurs, tablettes, et mobiles ; <br> présence
-                    d'un carousel en <a href="https://jquery.com/" target="_blank">Jquery</a>.</p>
-            </div>
-            <div class="travail wow fadeInLeft" data-wow-duration="1.5s">
-                <a href="animations/index.html" target="_blank">
-                    <img src="images/animation.webp" alt="Aperçu du projet sur les animations CSS">
-                </a>
-                <a href="animations/index.html" target="_blank" class="workCaption">Animations CSS</a>
-                <p>Site sur le <a href="https://www.theoceancleanup.com/great-pacific-garbage-patch/"
-                        target="_blank">Great Pacific Garbage Patch</a> <br> avec de nombreuse <a
-                        href="http://leaverou.github.io/animatable/" target="_blank">animations CSS</a>.</p>
-            </div>
-        </div>
-        <!-- Stages -->
-        <h3>Stages</h3>
-        <div id="stages">
-            <div class="travail wow fadeInLeft" data-wow-duration="1.5s">
-                <a href="https://roger-net-service.com" target="_blank">
-                    <img src="images/rns.webp"
-                        alt="Aperçu du site Roger Net Service réalisé sur Wordpress durant mon stage de 2 mois chez Ze-Company">
-                </a>
-                <a href="https://roger-net-service.com" target="_blank" class="workCaption">Roger Net Service</a>
-                <p>Site de l'entreprise Roger Net Service réalisé <br> sur Wordpress durant mon stage de 2 <br> mois
-                    chez
-                    <a href="https://www.ze-company.com/fr/" target="_blank">Ze-Company</a>.</p>
-            </div>
-        </div>
-        <h3>Projets de DUT</h3>
-        <!-- DUT MMI -->
-        <div id="dut">
-            <div class="travail wow fadeInLeft" data-wow-duration="1.5s">
-                <a href="http://195.83.128.55/~mmi16a04/site/index.html" target="_blank">
-                    <img src="images/aloha.webp"
-                        alt="Aperçu du site Aloha réalisé durant le 1er semestre de mon DUT MMI">
-                </a>
-                <a href="http://195.83.128.55/~mmi16a04/site/index.html" target="_blank" class="workCaption">Aloha</a>
-                <p>Réalisation d’un site<br> e-commerce de sports de glisse, <br> dans le cadre du
-                    projet tutoré du 1er semestre.</p>
-            </div>
-            <div class="travail wow fadeInRight" data-wow-duration="1.5s">
-                <a href="http://149.91.81.147/iaraduin/" target="_blank">
-                    <img src="images/iaraduin.webp"
-                        alt="Aperçu du site Iaraduin réalisé durant le 3ème semestre de mon DUT MMI">
-                </a>
-                <a href="http://149.91.81.147/iaraduin/" target="_blank" class="workCaption">Iaraduin</a>
-                <p>Réalisation d'un site de jeu d'énigmes dynamique <br> sur le thème du fantastique médiéval, <br>
-                    dans le cadre du projet tutoré du 3ème semestre.</p>
-            </div>
-        </div>
-        <p class="dut wow fadeInUp" data-wow-duration="1.5s">Vous pouvez retrouvez mes autres travaux effectués pendant
-            mon
-            DUT MMI
-            <a href="http://195.83.128.55/~mmi16e12/travaux2.html" target="blank">ici</a>.</p>
-    </div>
-    <!-- Me Contacter -->
-    <div id="z5" tabindex="5">
-        <h2 class="wow fadeInDown" data-wow-duration="1.5s">Me Contacter</h2>
-        <p class="wow fadeInUp" data-wow-duration="1.5s">Vous avez des questions ou vous souhaitez me contacter ? <br>
-            Vous pouvez utiliser ce formulaire de contact ou bien utiliser mes autres coordonnées.
-        </p>
-        <div id="contact">
-            <div id="infos" class="wow fadeInLeft" data-wow-duration="1.5s">
-                <address>
-                    <p>
-                        <i class="fas fa-laptop-code"></i><strong>Matthieu MARTIN</strong>, Développeur Front-End
-                        <br><br>
-                        <i class="fas fa-phone"></i>Téléphone : <a href="tel:+33615777288">06 15 77 72 88</a><br><br>
-                        <i class="fas fa-at"></i>Email : <a
-                            href="mailto:martinmatthieupro@gmail.com">martinmatthieupro@gmail.com</a>
-                    </p>
-                </address>
-            </div>
-            <form action="https://formspree.io/martinmatthieupro@gmail.com" id="formulaire" method="POST"
-                name="formulaire" class="wow fadeInRight" data-wow-duration="1.5s" onsubmit="formulaire()">
-                <div id="name">
-                    <input type="text" name="name" placeholder="Votre Nom" required>
-                    <input type="text" name="surname" placeholder="Votre Prénom" required>
-                </div>
-                <div id="mailObject">
-                    <input type="email" name="email" placeholder="Votre adresse mail" required>
-                    <input type="text" name="subject" placeholder="Objet du message" required>
-                </div>
-                <textarea name="message" id="message" placeholder="Votre message..." required></textarea>
-                <div id="envoyer">
-                    <input class="bouton" type="submit" value="Envoyer">
-                </div>
-            </form>
-        </div>
-        <div id="upArrow">
-            <a href="#canvas"><img class="bounce up" src="images/up.webp" alt="up arrow"></a>
-        </div>
-    </div>
-    <!-- Footer -->
-    <footer tabindex="6">
-        <ul id="footer">
-            <li class="wow fadeInUp" data-wow-duration="0.5s">© Matthieu Martin</li>
-            <li class="wow fadeInUp"> | </li>
-            <li class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.2s">
-                <a href="https://www.linkedin.com/in/matthieu-martin-44901b140/">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-            </li>
-            <li class="twitter wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.4s">
-                <a href="https://twitter.com/Ginshuto">
-                    <i class="fab fa-twitter"></i>
-                </a>
-            </li>
-            <li class="github wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.6s">
-                <a href="https://github.com/Ginshuto">
-                    <i class="fab fa-github"></i>
-                </a>
-            </li>
+
+    <!-- Menu Burger pour la navigation mobile -->
+    <div class="overlay overlay-slidedown">
+      <button type="button" class="overlay-close">Close</button>
+      <nav>
+        <ul class="navigation__list">
+          <li class="navigation__list-item">
+            <a class="navigation__link un" href="#Accueil">Accueil</a>
+          </li>
+          <li class="navigation__list-item">
+            <a class="navigation__link deux" href="#Qui-suis-je">Qui suis-je ?</a>
+          </li>
+          <li class="navigation__list-item">
+            <a class="navigation__link trois" href="#Competences">Mes compétences</a>
+          </li>
+          <li class="navigation__list-item">
+            <a class="navigation__link quatre" href="#Realisations">Mes réalisations</a>
+          </li>
+          <li class="navigation__list-item">
+            <a class="navigation__link cinq" href="#Contact">Me contacter</a>
+          </li>
         </ul>
+      </nav>
+    </div>
+
+    <!-- À Propos -->
+    <section id="Qui-suis-je" class="section--2">
+      <h2 class="wow fadeInDown section--2__title" data-wow-duration="1.5s">Qui suis-je ?</h2>
+      <div class="section--2__content">
+        <div class="section--2__images">
+          <div class="wow fadeInLeft section--2__images--picture" data-wow-duration="1.5s" data-wow-delay=".4s">
+            <img src="images/photo.webp" alt="Photographie de Matthieu MARTIN, par Laurent MARTIN." />
+          </div>
+          <div class="wow fadeInLeft section--2__images--logo" data-wow-duration="1.5s" data-wow-delay=".8s">
+            <img src="images/logo.webp" alt="Logo représentant mes 2 initiales" />
+          </div>
+        </div>
+        <div class="section--2__text">
+          <p class="wow fadeInRight section--2__paragraph" data-wow-duration="1.5s" data-wow-delay="1.2s">
+            Bienvenue sur mon Portfolio !
+            <br /><br />
+            Diplômé d'un DUT Métiers du Multimédia et de l'Internet, j'ai acquis une expertise globale dans le domaine du multimédia et de l'internet.
+            <br /><br />
+            Après mon DUT MMI, J'ai effectué la formation intensive Web & Go de la Coding Academy By Epitech, d'une durée de 5 mois,<br />
+            où j'y ai perfectionné mes compétences en Développement Front-End, <br />
+            et appris à utiliser de nouveaux outils comme React et Angular. <br /><br />
+            Actuellement en 2ème année de mastère Expert Développement Web dans l'école YNOV Paris.
+            <br /><br />
+            Je suis passionné par les Jeux Vidéos ainsi que la culture japonaise.
+          </p>
+          <div class="wow fadeInUp section--2__cv" data-wow-duration="1.5s" data-wow-delay="1.4s">
+            <a href="CV.pdf" target="_blank">
+              <button>Ouvrir mon CV</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mes Compétences -->
+    <section id="Competences" class="section--3">
+      <h2 class="wow fadeInDown section--3__title" data-wow-duration="1.5s">Mes compétences</h2>
+      <div class="wow fadeInUp skills">
+        <div class="skills__skill wow fadeInUp" data-wow-duration="1.5s">
+          <i class="wow shake fas fa-code skills__skill__icon" aria-hidden="true" data-wow-duration="1s" data-wow-delay=".5s"></i>
+          <h3 class="skills__skill__title">Développement Web</h3>
+          <p class="skills__skill__paragraph">
+            Assembler des pages en HTML5 et CSS/SCSS à partir de maquettes graphiques, et intégrer des contenus textuels, images, animations, sons, ou
+            encore de la vidéo, et cela en responsive Design.
+          </p>
+        </div>
+        <div class="skills__skill wow fadeInUp" data-wow-duration="1.5s" data-wow-delay=".5s">
+          <i class="wow shake fab fa-js-square skills__skill__icon" aria-hidden="true" data-wow-duration="1s" data-wow-delay="1s"></i>
+          <h3 class="skills__skill__title">Technologies JS</h3>
+          <p class="skills__skill__paragraph">
+            Utilisation des technologies Javascript afin de créer des sites web riches et interactifs, ou bien des applications mobiles. <br />
+            Je maîtrise le langage Javascript, Jquery, ainsi que les bases d'Angular, React et React Native.
+          </p>
+        </div>
+        <div class="skills__skill wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1s">
+          <i class="wow shake fas fa-window-restore skills__skill__icon" aria-hidden="true" data-wow-duration="1s" data-wow-delay="1.5s"></i>
+          <h3 class="skills__skill__title">Ergonomie</h3>
+          <p class="skills__skill__paragraph">
+            Conception d'une interface Web ergonomique, accessible et simple d'utilisation pour tous les internautes, y compris les personnes
+            handicapées.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mes Réalisations -->
+    <section id="Realisations" class="section--4">
+      <h2 class="wow fadeInDown section--4__title" data-wow-duration="1.5s">Mes réalisations</h2>
+      <div id="splide" class="splide wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.5s">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide project">
+              <img class="project__image" src="images/spotify-react.webp" alt="Aperçu du projet MySpotify" />
+              <div class="project__description">
+                <h3 class="project__description__title">
+                  <a href="https://myspotifypwa.netlify.app/" class="project__description__title__link">PWA MySpotify</a>
+                </h3>
+                <p class="project__description__paragraph">Application PWA React Spotify de gestion de playlists.</p>
+                <p class="project__description__paragraph">
+                  <a href="https://github.com/Ginshuto/SpotifyWPA" class="project__description__paragraph__link" target="_blank"
+                    >Lien vers le répértoire Github</a
+                  >.
+                </p>
+              </div>
+            </li>
+            <li class="splide__slide project">
+              <img class="project__image" src="images/rns.webp" alt="Aperçu du site Roger Net Service" />
+              <div class="project__description">
+                <h3 class="project__description__title">
+                  <a href="https://roger-net-service.com" target="_blank" class="project__description__title__link">Roger Net Service</a>
+                </h3>
+                <p class="project__description__paragraph">
+                  Création de logo, style SCSS, et amélioration de l'ergonomie du site vitrine Roger Net Service.
+                </p>
+                <p class="project__description__paragraph">
+                  Travail réalisé sur Wordpress durant mon stage de fin de DUT MMI, d'une durée de 2 mois, chez
+                  <a href="https://www.ze-company.com/fr/" class="project__description__paragraph__link" target="_blank">Ze-Company</a>.
+                </p>
+              </div>
+            </li>
+            <li class="splide__slide project">
+              <img class="project__image" src="images/maquette.webp" alt="Aperçu du projet sur la maquette SASS #2" />
+              <div class="project__description">
+                <h3 class="project__description__title">ParcoursESMS</h3>
+                <p class="project__description__paragraph">
+                  Création de maquettes et charte graphique, styles SCSS, JavaScript, XHTML ainsi que travail sur l'ergonomie et l'accessibilité sur
+                  ParcoursESMS, application de gestion et de suivi d'établissements sociaux et médico-sociaux.
+                </p>
+                <p class="project__description__paragraph">
+                  Travail réalisé durant mon contrat de professionnalisation de 2ème année de mastère, d'une durée de 1 an, chez
+                  <a href="https://amio-millau.fr" class="project__description__paragraph__link" target="_blank">AMIO</a>.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Me Contacter -->
+    <section id="Contact" class="section--5">
+      <h2 class="wow fadeInDown section--5__title" data-wow-duration="1.5s">Me contacter</h2>
+      <p class="wow fadeInUp section--5__paragraph" data-wow-duration="1.5s">
+        Vous avez des questions ou vous souhaitez me contacter ? <br />
+        Vous pouvez utiliser ce formulaire de contact ou bien utiliser mes autres coordonnées.
+      </p>
+      <div class="contact">
+        <address class="wow fadeInLeft contact__informations" data-wow-duration="1.5s">
+          <span>
+            <i class="fas fa-laptop-code" aria-hidden="true"></i>
+            Matthieu MARTIN, Développeur Front-End
+          </span>
+          <span>
+            <i class="fas fa-phone" aria-hidden="true"></i>
+            Téléphone : <a href="tel:+33615777288">06 15 77 72 88</a>
+          </span>
+          <span>
+            <i class="fas fa-at" aria-hidden="true"></i>
+            Email : <a href="mailto:martinmatthieupro@gmail.com">martinmatthieupro@gmail.com</a>
+          </span>
+        </address>
+        <form
+          action="https://formspree.io/martinmatthieupro@gmail.com"
+          id="formulaire"
+          method="POST"
+          name="formulaire"
+          class="wow fadeInRight contact__form"
+          data-wow-duration="1.5s"
+          onsubmit="formulaire()"
+        >
+          <!-- Créer labels invisibles pour handicap -->
+          <div class="contact__form__column">
+            <label for="name">Votre nom</label>
+            <input type="text" id="name" name="name" placeholder="Votre Nom" required aria-required="true" />
+            <label for="surname">Votre prénom</label>
+            <input type="text" id="surname" name="surname" placeholder="Votre Prénom" required aria-required="true" />
+          </div>
+          <div class="contact__form__column">
+            <label for="email">Votre adresse mail</label>
+            <input type="email" id="email" name="email" placeholder="Votre adresse mail" required aria-required="true" />
+            <label for="subject">Objet du message</label>
+            <input type="text" id="subject" name="subject" placeholder="Objet du message" required aria-required="true" />
+          </div>
+          <label for="message">Votre message</label>
+          <textarea id="message" name="message" id="message" placeholder="Votre message..." required aria-required="true"></textarea>
+          <div id="envoyer">
+            <input class="bouton" type="submit" value="Envoyer" />
+          </div>
+        </form>
+      </div>
+      <div class="navigation__arrow">
+        <a href="#Accueil">
+          <img class="navigation__arrow--up" src="images/up.png" alt="Retourner en haut de la page" />
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="wow fadeInUp" data-wow-duration="0.5s">© 2021 Matthieu MARTIN</div>
+      <div class="wow fadeInUp" data-wow-duration="0.5s">|</div>
+      <div class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.2s">
+        <a href="https://www.linkedin.com/in/matthieu-martin-44901b140/" class="footer__link" target="_blank">
+          <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+          <span>Lien Linkedin</span>
+        </a>
+      </div>
+      <div class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.4s">
+        <a href="https://twitter.com/Ginshuto" class="footer__link" target="_blank">
+          <i class="fab fa-twitter" aria-hidden="true"></i>
+          <span>Lien Twitter</span>
+        </a>
+      </div>
+      <div class="wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.6s">
+        <a href="https://github.com/Ginshuto" class="footer__link" target="_blank">
+          <i class="fab fa-github" aria-hidden="true"></i>
+          <span>Lien Github</span>
+        </a>
+      </div>
     </footer>
-    <!-- Scripts JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="js/jquery.localScroll.js"></script>
-    <script src="js/jquery.scrollTo.js"></script>
+
+    <!-- Scripts Jquery -->
+    <script src="js/jquery/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery/jquery.localScroll.js"></script>
+    <script src="js/jquery/jquery.scrollTo.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/underscore@latest/underscore-umd-min.js"></script>
+
     <!-- Menu Burger -->
-    <script src="js/modernizr.custom.js"></script>
-    <script src="js/classie.js"></script>
-    <script src="js/burger.js"></script>
+    <script src="js/burger/modernizr.custom.js"></script>
+    <script src="js/burger/classie.js"></script>
+    <script src="js/burger/burger.js"></script>
+
     <!-- wow.js -->
     <script src="js/wow.min.js"></script>
-    <script>
-        new WOW({
-            mobile: false,
-        }).init();
-        new WOW({ boxClass: 'wowDeux', }).init();
-        $(document).ready(function () {
-            $('#canvas').localScroll();
-            $('nav').localScroll();
-            $("#upArrow").localScroll();
-        });
-        $(window).scroll(function () {
-            if ($(document).scrollTop() > $("header").height() - 50) {
-                $('header div nav').addClass('nav2');
-                $("#trigger-overlay").removeClass('transparent');
-                $("#trigger-overlay").addClass('blue');
-            } else {
-                $('header div nav').removeClass('nav2');
-                $("#trigger-overlay").removeClass('blue');
-                $("#trigger-overlay").addClass('transparent');
-            }
-        });
-    </script>
-    <!-- Main library -->
-    <script src="js/three.min.js"></script>
+    <!-- splide.js -->
+    <script src="js/splide.js"></script>
+    <!-- Regroupe les différentes initialisations JS -->
+    <script src="js/main.prod.js"></script>
+    <!-- Main library for the canvas animation by Joan CLARET : https://github.com/JoanClaret/html5-canvas-animation -->
+    <script src="js/canvas/three.min.js"></script>
     <!-- Helpers -->
-    <script src="js/projector.js"></script>
-    <script src="js/canvas-renderer.js"></script>
+    <script src="js/canvas/projector.js"></script>
+    <script src="js/canvas/canvas-renderer.js"></script>
     <!-- Visualization adjustments -->
-    <script src="js/3d-lines-animation.js"></script>
-    <!-- Animated background color -->
-    <script src="js/color.js"></script>
-    <script>
-        function formulaire() {
-            dataLayer.push({
-                'event': 'portfolioEvent',
-                'eventCategory': 'Utilisateur',
-                'eventAction': 'Formulaire de Contact',
-                'eventLabel': 'Message Envoyé',
-                'eventValue': '1'
-            });
-        }
-    </script>
-
-</body>
-
+    <script src="js/canvas/3d-lines-animation.js"></script>
+  </body>
 </html>
