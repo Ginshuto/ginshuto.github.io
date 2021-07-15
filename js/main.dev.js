@@ -78,6 +78,10 @@ $(document).ready(function () {
 
     keyCodeArray.push(e.keyCode);
 
+    if (keyCodeArray[0] != 38 & keyCodeArray[1] != 38) {
+      keyCodeArray = [];
+    }
+
     if (_.isEqual(keyCodeArray, [38, 38, 40, 40, 37, 39, 37, 39, 66, 65])) {
       console.log("KONAMI CODE ACTIVATED");
       alert("KONAMI CODE ACTIVATED"); // $("body").html("<p style='color:blue'>KONAMI CODE ACTIVATED</p>")
