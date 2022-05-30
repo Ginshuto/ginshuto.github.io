@@ -19,6 +19,18 @@ $(document).ready(function () {
   var skills = $("#Competences").height();
   var work = $("#Realisations").height();
   var index = 0;
+
+  if ($(document).scrollTop() > header - 35) {
+    $(".navigation").addClass("visible");
+    $("#trigger-overlay").addClass("visible");
+  } else {
+    $(".navigation").removeClass("visible");
+    $("#trigger-overlay").removeClass("visible");
+    index = 0;
+    $(".navigation__link").removeClass("active");
+    $(".navigation__link").eq(0).addClass("active");
+  }
+
   $(window).scroll(function () {
     if ($(document).scrollTop() > header - 35) {
       $(".navigation").addClass("visible");

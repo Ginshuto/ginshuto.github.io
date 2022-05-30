@@ -91,7 +91,7 @@ body {
   margin: 0px;
   color: $color-1;
   overflow-x: hidden;
-
+  scroll-behavior: smooth;
   h1,
   h2,
   h3 {
@@ -175,6 +175,9 @@ body {
   }
   i {
     font-size: 40px;
+  }
+  span {
+    display: none;
   }
 }
 
@@ -300,6 +303,9 @@ body {
           @media screen and (max-width: 500px) {
             font-size: 4em;
           }
+          @media screen and (min-width: 2000px) {
+            font-size: 15em;
+          }
         }
         &.canvas__title--second-span {
           font-size: 4.7em;
@@ -312,6 +318,9 @@ body {
           @media screen and (max-width: 500px) {
             font-size: 4em;
             margin-top: 0.5em;
+          }
+          @media screen and (min-width: 2000px) {
+            font-size: 10em;
           }
         }
       }
@@ -341,6 +350,9 @@ body {
     @include titleMargin();
     font-size: 30px;
     color: $color-2;
+    @media screen and (min-width: 2000px) {
+      font-size: 35px;
+    }
   }
 
   &__content {
@@ -398,12 +410,18 @@ body {
       @media screen and (max-width: 500px) {
         padding-left: 0;
       }
+      @media screen and (min-width: 2000px) {
+        padding-left: 0;
+      }
       .section--2__paragraph {
         text-align: center;
         font-size: 20px;
         letter-spacing: 1px;
         color: $color-2;
         font-family: $font-family-2;
+        @media screen and (min-width: 2000px) {
+          font-size: 25px;
+        }
       }
       .section--2__cv {
         @media screen and (max-width: 768px) {
@@ -439,6 +457,9 @@ body {
     font-size: 30px;
     color: $color-1;
     @include titleMargin();
+    @media screen and (min-width: 2000px) {
+      font-size: 35px;
+    }
   }
 
   .skills {
@@ -476,6 +497,9 @@ body {
         letter-spacing: 1px;
         color: $color-1;
         font-family: $font-family-2;
+        @media screen and (min-width: 2000px) {
+          font-size: 25px;
+        }
       }
     }
   }
@@ -494,6 +518,9 @@ body {
     text-align: center;
     font-size: 30px;
     color: $color-2;
+    @media screen and (min-width: 2000px) {
+      font-size: 35px;
+    }
   }
 
   // Splide
@@ -503,9 +530,16 @@ body {
       @media screen and (max-width: 500px) {
         display: none;
       }
+      @media screen and (min-width: 2000px) {
+        bottom: -2em;
+      }
       .splide__pagination__page {
         background: $color-1;
         border: 1px solid $color-2;
+        @media screen and (min-width: 2000px) {
+          width: 15px;
+          height: 15px;
+        }
         &:hover {
           box-shadow: 0px 0px 5px $color-2;
         }
@@ -520,6 +554,10 @@ body {
         svg {
           transition: fill 0.5s ease;
           fill: $color-2;
+          @media screen and (min-width: 2000px) {
+            width: 3.5em;
+            height: 3.5em;
+          }
           &:hover {
             fill: $color-1;
           }
@@ -529,11 +567,17 @@ body {
   }
 
   .project {
+    @media screen and (min-width: 2000px) {
+      height: 850px !important;
+    }
     &__description {
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
       height: 500px;
+      @media screen and (min-width: 2000px) {
+        height: 850px;
+      }
       &__title,
       &__paragraph {
         padding: 15px;
@@ -542,6 +586,9 @@ body {
       &__title {
         font-size: 25px;
         color: $color-1;
+        @media screen and (min-width: 2000px) {
+          font-size: 30px;
+        }
         @include boldHoverAnimation($color-1);
         &__link {
           color: $color-1;
@@ -552,6 +599,9 @@ body {
         font-size: 20px;
         font-family: $font-family-2;
         letter-spacing: 1px;
+        @media screen and (min-width: 2000px) {
+          font-size: 25px;
+        }
         &__link {
           color: $color-1;
           @include boldHoverAnimation($color-1);
@@ -571,6 +621,9 @@ body {
     text-align: center;
     font-size: 30px;
     color: $color-1;
+    @media screen and (min-width: 2000px) {
+      font-size: 35px;
+    }
   }
 
   &__paragraph {
@@ -580,6 +633,9 @@ body {
     letter-spacing: 1px;
     color: $color-1;
     font-family: $font-family-2;
+    @media screen and (min-width: 2000px) {
+      font-size: 25px;
+    }
   }
 
   .contact {
@@ -603,6 +659,9 @@ body {
         width: 90%;
         padding-bottom: 5%;
         padding-top: 0;
+      }
+      @media screen and (min-width: 2000px) {
+        font-size: 25px;
       }
       span {
         padding: 15px 0;
@@ -723,6 +782,9 @@ footer {
   text-align: center;
   font-size: 17px;
   letter-spacing: 1px;
+  @media screen and (min-width: 2000px) {
+    font-size: 22px;
+  }
   div {
     padding: 0 5px;
   }
@@ -733,6 +795,9 @@ footer {
       font-size: 23px;
       opacity: 1;
       transition: all ease-in-out 0.5s;
+      @media screen and (min-width: 2000px) {
+        font-size: 28px;
+      }
       &:hover {
         opacity: 0.8;
       }

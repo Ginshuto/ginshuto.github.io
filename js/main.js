@@ -15,6 +15,16 @@ $(document).ready(function () {
   let skills = $("#Competences").height();
   let work = $("#Realisations").height();
   let index = 0;
+  if ($(document).scrollTop() > header - 35) {
+    $(".navigation").addClass("visible");
+    $("#trigger-overlay").addClass("visible");
+  } else {
+    $(".navigation").removeClass("visible");
+    $("#trigger-overlay").removeClass("visible");
+    index = 0;
+    $(".navigation__link").removeClass("active");
+    $(".navigation__link").eq(0).addClass("active");
+  }
   $(window).scroll(function () {
     if ($(document).scrollTop() > header - 35) {
       $(".navigation").addClass("visible");
@@ -68,7 +78,7 @@ $(document).ready(function () {
     }
     // Projet secret
     keyCodeArray.push(e.keyCode);
-    if(keyCodeArray[0] != 38 & keyCodeArray[1] != 38){
+    if ((keyCodeArray[0] != 38) & (keyCodeArray[1] != 38)) {
       keyCodeArray = [];
     }
     if (_.isEqual(keyCodeArray, [38, 38, 40, 40, 37, 39, 37, 39, 66, 65])) {
