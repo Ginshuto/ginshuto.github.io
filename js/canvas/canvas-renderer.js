@@ -17,7 +17,7 @@
     );
   }),
   (THREE.CanvasRenderer = function (e) {
-    console.log("THREE.CanvasRenderer", THREE.REVISION);
+    // console.log("THREE.CanvasRenderer", THREE.REVISION);
     var d = THREE.Math.smoothstep;
     e = e || {};
     var a,
